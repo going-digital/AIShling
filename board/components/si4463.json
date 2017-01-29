@@ -1,0 +1,223 @@
+{
+    "info": {
+        "description": "Transceiver",
+        "manufacturer": "Silicon Labs",
+        "part-number": "Si4463",
+        "suppliers": {
+            "farnell": ""
+        },
+        "notes": ""
+    },
+    "pins": {
+        "1": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [-2, 1.0],
+                "label": "SDN"
+            }
+        },
+        "2": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [-2, 0.5],
+                "label": "RXp"
+            }
+        },
+        "3": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [-2, 0.0],
+                "label": "RXn"
+            }
+        },
+        "4": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [-2, -0.5],
+                "label": "TX"
+            }
+        },
+        "5": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [-2, -1],
+                "label": "NC"
+            }
+        },
+        "6": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [-1, -2],
+                "label": "VDD"
+            }
+        },
+        "7": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [-0.5, -2],
+                "label": "TXRamp"
+            }
+        },
+        "8": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [0, -2],
+                "label": "VDD"
+            }
+        },
+        "9": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [0.5, -2],
+                "label": "GPIO0"
+            }
+        },
+        "10": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [1, -2],
+                "label": "GPIO1"
+            }
+        },
+        "11": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [2, -1],
+                "label": "nIRQ"
+            }
+        },
+        "12": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [2, -0.5],
+                "label": "SCLK"
+            }
+        },
+        "13": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [2, 0],
+                "label": "SDO"
+            }
+        },
+        "14": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [2, 0.5],
+                "label": "SDI"
+            }
+        },
+        "15": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [2, 1],
+                "label": "nSEL"
+            }
+        },
+        "16": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [1, 2],
+                "label": "XOUT"
+            }
+        },
+        "17": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [0.5, 2],
+                "label": "XIN"
+            }
+        },
+        "18": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [0, 2],
+                "label": "GND"
+            }
+        },
+        "19": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [-0.5, 2],
+                "label": "GPIO2"
+            }
+        },
+        "20": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [-1, 2],
+                "label": "GPIO3"
+            }
+        },
+        "TH": {
+            "layout": {
+                "pad": "pad_c",
+                "location": [0, 0],
+                "label": "GND"
+            }
+        }
+    },
+    "layout": {
+        "silkscreen": {
+            "shapes": [{
+                    "type": "rect",
+                    "width": 4,
+                    "height": 4,
+                    "style": "stroke",
+                    "stroke-width": 0.2,
+                    "location": [0, 0],
+                    "radii": {
+                        "bl": 0.25,
+                        "br": 0.25,
+                        "tl": 0,
+                        "tr": 0.25
+                    }
+                },
+                {
+                    "type": "circle",
+                    "diameter": 0.6,
+                    "style": "fill",
+                    "location": [-1.5, -1.5]
+                }
+            ]
+        },
+        "assembly": {
+            "shapes": [{
+                    "type": "rect",
+                    "width": 4.7,
+                    "height": 4.7,
+                    "location": [0, 0]
+                },
+                {
+                    "type": "circle",
+                    "diameter": 0.4,
+                    "style": "fill",
+                    "location": [-2, -2]
+                }
+            ]
+        }
+    },
+    "pads": {
+        "pad_a": {
+            "shapes": [{
+                "type": "rect",
+                "width": 0.7,
+                "height": 0.25
+            }]
+        },
+        "pad_b": {
+            "shapes": [{
+                "type": "rect",
+                "width": 0.25,
+                "height": 0.7
+            }]
+        },
+        "pad_c": {
+            "shapes": [{
+                "type": "rect",
+                "width": 2.6,
+                "height": 2.6
+            }]
+        }
+    }
+}
