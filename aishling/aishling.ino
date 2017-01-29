@@ -54,7 +54,7 @@ void loop() {
   if (Serial.available()) {
     uint8_t c = Serial.read();
     switch (c) {
-      case 'h':
+      case 'h': // Help message
         startup_message();
         break;
       case 'e':
