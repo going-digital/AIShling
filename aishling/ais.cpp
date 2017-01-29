@@ -150,7 +150,6 @@ void ais_interrupt() {
 
           // STATE: PREFETCH FIRST PACKET BYTE
           case PH_STATE_PREFETCH:								// state: pre-fill receive buffer with 8 bits
-              Serial.print("p");
               rx_bit_count++;									// increase bit counter
               if (rx_bit_count == 8) {						// after 8 bits arrived
                   rx_bit_count = 0;							// reset bit counter
