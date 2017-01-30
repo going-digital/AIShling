@@ -1,0 +1,10 @@
+Possible enclosures
+Simple
+Hammond USB1 Farnell#2580581 £1.48 35x20x15.5 ext 
+Hammond USB2 Farnell#2580586 £1.64 50x25x15.5 ext
+Hammond USB3 Farnell#2580591 £1.78 50x25x15.5 ext 
+
+Scuplted with cap, badge positions
+Bud Industries USB7201C Farnell#2473229 £1.89 56x23x8.7 ext without cap
+Multicomp MCG1901 Farnell#1603603 £2.65 56x23x8.7
+

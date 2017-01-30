@@ -1,0 +1,41 @@
+{
+  "layout":
+  {
+    "conductor":
+    {
+      "shapes":
+      [
+        {
+          "buffer-to-pour": 0.1,
+          "font-family": "Helsinki-webfont",
+          "font-size": "1.2mm",
+          "layers": [
+            "top"
+          ],
+          "letter-spacing": "0mm",
+          "line-height": "1.2mm",
+          "rotate": 0,
+          "style": "fill",
+          "type": "text",
+          "value": "AIShling",
+          "location": [0,0]
+        },
+        {
+          "buffer-to-pour": 0.1,
+          "font-family": "Helsinki-webfont",
+          "font-size": "1.2mm",
+          "layers": [
+            "top"
+          ],
+          "letter-spacing": "0mm",
+          "line-height": "1.2mm",
+          "rotate": 0,
+          "style": "fill",
+          "type": "text",
+          "value": "prototype",
+          "location": [0.8,-2]
+        }
+      ]
+    }
+  }
+}

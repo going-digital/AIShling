@@ -1,0 +1,216 @@
+{
+  "components": {
+    "IC1": {
+      "footprint": "at32u4_tqfp",
+      "layer": "top",
+      "location": [
+        -10,
+        -5
+      ],
+      "show": true,
+      "silkscreen": {
+        "refdef": {
+          "show": false
+        }
+      }
+    },
+    "IC2": {
+      "footprint": "si4463",
+      "layer": "top",
+      "location": [
+        10,
+        -5
+      ],
+      "show": true,
+      "silkscreen": {
+        "refdef": {
+          "show": false
+        }
+      }
+    },
+    "IC3": {
+      "footprint": "osc_5032",
+      "layer": "top",
+      "location": [
+        -10,
+        10
+      ],
+      "show": true,
+      "silkscreen": {
+        "refdef": {
+          "show": false
+        }
+      }
+    },
+    "IC4": {
+      "footprint": "osc_5032",
+      "layer": "top",
+      "location": [
+        10,
+        10
+      ],
+      "show": true,
+      "silkscreen": {
+        "refdef": {
+          "show": false
+        }
+      }
+    }
+
+
+  },
+  "config": {
+    "name": "cordwood-too",
+    "no-docs": false,
+    "no-drill-index": false,
+    "no-flashes": false,
+    "no-layer-index": false,
+    "rev": "A",
+    "style-layout": "default",
+    "units": "mm"
+  },
+  "distances": {
+    "from-pour-to": {
+      "drill": 0.4,
+      "outline": 0.25,
+      "pad": 0.3,
+      "route": 0.25
+    },
+    "soldermask": {
+      "circle-buffer": 0.05,
+      "path-scale": 1.05,
+      "rect-buffer": 0.05
+    },
+    "solderpaste": {
+      "circle-buffer": -0.1,
+      "path-scale": 0.9,
+      "rect-buffer": -0.1
+    }
+  },
+  "documentation": {
+    "board-details": {
+      "font-family": "Overlock-Regular-OTF-webfont",
+      "font-size": "1.5mm",
+      "letter-spacing": "0mm",
+      "line-height": "1.5mm",
+      "location": [
+        -49.595894,
+        -61.434224
+      ],
+      "rotate": 0,
+      "style": "fill",
+      "type": "text",
+      "value": "Board details:\nName: AIShling\nRevision: A\nDescription: AIS receiver\nLicense: MIT\nDesigner: Peter Knight"
+    },
+    "manufacturing": {
+      "font-family": "Overlock-Regular-OTF-webfont",
+      "font-size": "1.5mm",
+      "letter-spacing": "0mm",
+      "line-height": "1.5mm",
+      "location": [
+        -46.431832,
+        -74.666223
+      ],
+      "rotate": 0,
+      "style": "fill",
+      "type": "text",
+      "value": "Manufacturing:\nRoHS and lead free compliant manufacturing process\nUnit of length: Millimetre (mm)\nNumber of layers: 2 ('top', 'bottom')\nBoard thickness: 1.6 mm\nMaterial: FR4 35/35 um copper\nSilkscreen: top (white), bottom (white)\nSoldermask: top (green), bottom (green)\nSurface finish: RoHS lead free"
+    },
+    "pcbmode": {
+      "font-family": "Overlock-Regular-OTF-webfont",
+      "font-size": "1.2mm",
+      "letter-spacing": "0mm",
+      "line-height": "1.2mm",
+      "location": [
+        -50.241817,
+        -85.439666
+      ],
+      "rotate": 0,
+      "style": "fill",
+      "type": "text",
+      "value": "Designed with PCBmodE, an open source software\n     http://pcbmode.com\nStay updated:\n     @boldport @pcbmode http://boldport.com"
+    }
+  },
+  "drill-index": {
+    "location": [
+      -62.363106,
+      -50.112271
+    ]
+  },
+  "drills": {},
+  "files": {
+    "routing-data": "cordwood-too_routing.json",
+    "routing-svg": "cordwood-too.svg"
+  },
+  "gerber": {
+    "decimals": 6,
+    "digits": 6,
+    "min-segment-length": 0.05,
+    "steps-per-segment": 100
+  },
+  "outline": {
+    "measurements": {
+      "font-family": "UbuntuMono-R-webfont",
+      "scale": 0.0008
+    },
+    "shape": {
+      "type": "rect",
+      "width": 50,
+      "height": 30
+    }
+  },
+  "shapes": {
+    "INFO": {
+      "footprint": "text",
+      "layer": "top",
+      "location": [
+        27.558049,
+        -13.480169
+      ],
+      "rotate": 90,
+      "show": true
+    },
+    "PR": {
+      "footprint": "pours",
+      "layer": "top",
+      "location": [
+        0,
+        0
+      ],
+      "show": false
+    },
+    "SM": {
+      "footprint": "soldermask",
+      "layer": "top",
+      "location": [
+        -2.57,
+        -0.47
+      ],
+      "show": false
+    },
+    "SS": {
+      "footprint": "silkscreen",
+      "layer": "top",
+      "location": [
+        0,
+        0
+      ],
+      "show": false
+    }
+  },
+  "soldermask": {
+    "circle-buffer": 0.05,
+    "path-scale": 1.05,
+    "rect-buffer": 0.05,
+    "scale": 1.1
+  },
+  "solderpaste": {
+    "circle-buffer": -0.1,
+    "path-scale": 0.9,
+    "rect-buffer": -0.1,
+    "scale": 0.9
+  },
+  "vias": {
+    "default-via": "VIA"
+  }
+}
