@@ -1,0 +1,64 @@
+{
+    "components": {
+        "IC1": {
+          "footprint": "atmega32u4_tqfp",
+          "layer": "top",
+          "location": [0,0],
+          "rotate": 0,
+          "show": true,
+          "silkscreen": {
+            "refdef": {
+              "location": [
+                0,0
+              ],
+              "rotate": [0,0],
+              "rotate-with-component": true,
+              "show": true
+            },
+            "shapes": {
+              "show": true
+            }
+          }
+        }
+        "IC2": {
+          "footprint": "si4463",
+          "layer": "top",
+          "location": [0,0],
+          "rotate": 0,
+          "show": true,
+          "silkscreen": {
+            "refdef": {
+              "location": [
+                0,0
+              ],
+              "rotate": [0,0],
+              "rotate-with-component": true,
+              "show": true
+            },
+            "shapes": {
+              "show": true
+            }
+          }
+        }
+   },
+  "layer-control": {
+    "copper": {
+      "hidden": false,
+      "locked": false,
+      "pours": { "hidden": false, "locked": true },
+      "pads": { "hidden": false, "locked": false },
+      "routing": { "hidden": false, "locked": false }
+    },
+    "soldermask": { "hidden": false, "locked": false },
+    "solderpaste": { "hidden": true, "locked": true },
+    "silkscreen": { "hidden": false, "locked": false },
+    "assembly": { "hidden": false, "locked": false },
+    "documentation": { "hidden": false, "locked": false },
+    "dimensions": { "hidden": false, "locked": true },
+    "origin": { "hidden": false, "locked": true },
+    "drills": { "hidden": false, "locked": false },
+    "outline": { "hidden": false, "locked": true },
+}
+
+
+}
