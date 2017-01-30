@@ -33,3 +33,6 @@
 *.su
 
 .DS_Store
+
+boards/aishling/build/aishling.svg
+boards/aishling/build/paths_db.json

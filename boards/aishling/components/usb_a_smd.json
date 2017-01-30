@@ -1,0 +1,95 @@
+{
+    "info": {
+        "description": "USB A jack SMD",
+        "manufacturer": "Multicomp",
+        "part-number": "MC000991",
+        "suppliers": {
+            "farnell": "2476092"
+        },
+        "notes": "Useful datasheet http://www.farnell.com/cad/1701284.pdf"
+    },
+    "pins": {
+        "1": {
+            "layout": {
+                "pad": "pad",
+                "location": [-3.5, 5.55]
+            }
+        },
+        "2": {
+            "layout": {
+                "pad": "pad",
+                "location": [-1, 5.55]
+            }
+        },
+        "3": {
+            "layout": {
+                "pad": "pad",
+                "location": [1, 5.55]
+            }
+        },
+        "4": {
+            "layout": {
+                "pad": "pad",
+                "location": [3.5, 5.55]
+            }
+        },
+        "M1": {
+            "layout": {
+                "pad": "1.3mm",
+                "location": [-2.4,  2.75]
+            }
+        },
+        "M2": {
+            "layout": {
+                "pad": "1.3mm",
+                "location": [2.4,  2.75]
+            }
+        },
+        "M3": {
+            "layout": {
+                "pad": "3.2mm_slot",
+                "location": [-5.9,  2.75]
+            }
+        },
+        "M4": {
+            "layout": {
+                "pad": "3.2mm_slot",
+                "location": [5.9, 2.75]
+            }
+        }
+    },
+    "layout": {
+        "silkscreen": {
+            "shapes": []
+        },
+        "assembly": {
+            "shapes": [{
+                "type": "rect",
+                "width": 11.7,
+                "height": 17.75,
+                "location": [0, -6.975]
+            }]
+        }
+    },
+    "pads": {
+        "pad": {
+            "shapes": [{
+                "type": "rect",
+                "width": 0.9,
+                "height": 1.7
+            }]
+        },
+        "1.3mm": {
+            "drills": [{
+                "diameter": 1.3,
+                "offset": [0, 0],
+                "show_diameter": "yes"
+            }]
+        },
+        "3.2mm_slot": {
+            "drills": [{
+                "diameter": 3.2
+            }]
+        }
+    }
+}

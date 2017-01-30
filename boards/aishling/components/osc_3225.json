@@ -1,0 +1,82 @@
+{
+    "pins": {
+        "1": {
+            "layout": {
+                "pad": "pad",
+                "location": [-1.1, -0.8],
+                "label": "ENABLE"
+            }
+        },
+        "2": {
+            "layout": {
+                "pad": "pad",
+                "location": [1.1, -0.8],
+                "label": "GND"
+            }
+        },
+        "3": {
+            "layout": {
+                "pad": "pad",
+                "location": [1.1, 0.8],
+                "label": "OUT"
+            }
+        },
+        "4": {
+            "layout": {
+                "pad": "pad",
+                "location": [-1.1, 0.8],
+                "label": "VDD"
+            }
+        }
+    },
+
+    "layout": {
+        "silkscreen": {
+            "shapes": [{
+                "type": "rect",
+                "location": [0, 0],
+                "style": "stroke",
+                "stroke-width": 0.15,
+                "width": 3.9,
+                "height": 3.2
+            }, {
+                "type": "circle",
+                "diameter": 0.4,
+                "style": "fill",
+                "location": [-3, -2.5]
+            }]
+        },
+        "assembly": {
+            "shapes": [{
+                    "type": "rect",
+                    "style": "stroke",
+                    "stroke-width": 0.1,
+                    "width": 3.4,
+                    "height": 2.7
+                },
+                {
+                    "type": "circle",
+                    "diameter": 0.4,
+                    "style": "fill",
+                    "location": [-1, -1]
+                }
+            ]
+        }
+    },
+    "pads": {
+        "pad": {
+            "shapes": [{
+                "type": "rect",
+                "layers": ["top"],
+                "width": 1.4,
+                "height": 1.0,
+                "radii": {
+                    "tl": 0.25,
+                    "tr": 0.25,
+                    "bl": 0.25,
+                    "br": 0.25
+                }
+            }]
+        }
+    }
+}

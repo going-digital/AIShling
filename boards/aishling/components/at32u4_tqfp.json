@@ -322,8 +322,8 @@
         "silkscreen": {
             "shapes": [{
                 "type": "rect",
-                "width": 9,
-                "height": 9,
+                "width": 13,
+                "height": 13,
                 "location": [0, 0]
             }, {
                 "type": "circle",
@@ -333,17 +333,17 @@
             }]
         },
         "assembly": {
-          "shapes": [{
-              "type": "rect",
-              "width": 10,
-              "height": 10,
-              "location": [0, 0]
-          }, {
-              "type": "circle",
-              "diameter": 0.4,
-              "style": "fill",
-              "location": [-4.5, 4.5]
-          }]
+            "shapes": [{
+                "type": "rect",
+                "width": 10,
+                "height": 10,
+                "location": [0, 0]
+            }, {
+                "type": "circle",
+                "diameter": 0.4,
+                "style": "fill",
+                "location": [-4.5, 4.5]
+            }]
         }
     },
     "pads": {
@@ -358,19 +358,21 @@
                     "tr": 0.25,
                     "bl": 0.25,
                     "br": 0.25
-                }            }]
+                }
+            }]
         },
         "pad_b": {
             "shapes": [{
                 "layers": ["top"],
                 "type": "rect",
                 "width": 0.55,
-                "height": 1.5,                "radii": {
-                                    "tl": 0.25,
-                                    "tr": 0.25,
-                                    "bl": 0.25,
-                                    "br": 0.25
-                                }
+                "height": 1.5,
+                "radii": {
+                    "tl": 0.25,
+                    "tr": 0.25,
+                    "bl": 0.25,
+                    "br": 0.25
+                }
             }]
         }
     }
