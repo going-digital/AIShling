@@ -1,43 +1,21 @@
 {
     "components": {
         "IC1": {
-            "footprint": "at32u4_qfn",
+            "footprint": "ezr32hg330f64r67",
             "layer": "top",
-            "location": [-2, -2],
+            "location": [-2, 0],
             "show": true,
             "silkscreen": {
                 "refdef": {
                     "show": false
                 }
-            }
+            },
+            "rotate": 135
         },
         "IC2": {
-            "footprint": "si4463",
-            "layer": "top",
-            "location": [5, -3],
-            "show": true,
-            "silkscreen": {
-                "refdef": {
-                    "show": false
-                }
-            }
-        },
-        "IC3": {
             "footprint": "osc_3225",
             "layer": "top",
-            "location": [-5, 5],
-            "show": true,
-            "rotate": 90,
-            "silkscreen": {
-                "refdef": {
-                    "show": false
-                }
-            }
-        },
-        "IC4": {
-            "footprint": "osc_3225",
-            "layer": "top",
-            "location": [5, 5],
+            "location": [-6, 6],
             "show": true,
             "silkscreen": {
                 "refdef": {
@@ -68,21 +46,45 @@
                 }
             }
         },
-        "D1": {
-            "footprint": "0805_led",
+        "R1": {
+            "footprint": "0603",
             "layer": "top",
-            "location": [-12, -13.5],
+            "location": [-6, -6],
+            "show": true,
+            "silkscreen": {
+                "refdef": {
+                    "show": false
+                }
+            },
+            "rotate": 90
+        },
+        "D1": {
+            "footprint": "0603",
+            "layer": "top",
+            "location": [-4, -7],
             "show": true,
             "silkscreen": {
                 "refdef": {
                     "show": false
                 }
             }
+        },
+        "R2": {
+            "footprint": "0603",
+            "layer": "top",
+            "location": [2, -6],
+            "show": true,
+            "silkscreen": {
+                "refdef": {
+                    "show": false
+                }
+            },
+            "rotate": 90
         },
         "D2": {
-            "footprint": "0805_led",
+            "footprint": "0603",
             "layer": "top",
-            "location": [-8, -13.5],
+            "location": [0, -7],
             "show": true,
             "silkscreen": {
                 "refdef": {
@@ -90,10 +92,22 @@
                 }
             }
         },
-        "D3": {
-            "footprint": "0805_led",
+        "R3": {
+            "footprint": "0603",
             "layer": "top",
-            "location": [-4, -13.5],
+            "location": [6, -6],
+            "show": true,
+            "silkscreen": {
+                "refdef": {
+                    "show": false
+                }
+            },
+            "rotate": 90
+        },
+        "D3": {
+            "footprint": "0603",
+            "layer": "top",
+            "location": [4, -7],
             "show": true,
             "silkscreen": {
                 "refdef": {
@@ -104,13 +118,58 @@
         "SK3": {
             "footprint": "tc2030_idc_nl_avrisp",
             "layer": "top",
-            "location": [0, 4],
+            "location": [4, 5.5],
             "show": true,
             "silkscreen": {
                 "refdef": {
                     "show": false
                 }
             }
+        },
+        "LR1": {
+          "footprint": "0603",
+          "layer": "top",
+          "location": [5.5,-1],
+          "show": true,
+          "silkscreen": {
+            "refdef": {
+              "show": false
+            }
+          },
+          "rotate": 90
+        },
+        "CR1": {
+          "footprint": "0603",
+          "layer": "top",
+          "location": [6,-3.5],
+          "show": true,
+          "silkscreen": {
+            "refdef": {
+              "show": false
+            }
+          }
+        },
+        "LR2": {
+          "footprint": "0603",
+          "layer": "top",
+          "location": [7.5,0],
+          "show": true,
+          "silkscreen": {
+            "refdef": {
+              "show": false
+            }
+          }
+        },
+        "CR2": {
+          "footprint": "0603",
+          "layer": "top",
+          "location": [7.5,-2],
+          "show": true,
+          "silkscreen": {
+            "refdef": {
+              "show": false
+            }
+          }
         },
         "MH1": {
             "footprint": "hole-2mm",
