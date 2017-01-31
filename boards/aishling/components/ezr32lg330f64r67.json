@@ -115,7 +115,7 @@
             }
         },
         "16": {
-            "layout": 
+            "layout": {
                 "pad": "pad_a",
                 "location": [-4.435, -3.75],
                 "label": "PB6"
