@@ -94,7 +94,8 @@
                 "type": "circle",
                 "diameter": 0.767,
                 "style": "fill",
-                "location": [0, 0]
+                "location": [0, 0],
+                "solderpaste": []
             }]
         },
         "drill": {
