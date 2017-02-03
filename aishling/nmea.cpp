@@ -121,7 +121,7 @@ void nmea_process_packet(void)
 }
 
 // adds char to buffer and updates CRC
-inline void nmea_push_char(char c)
+void nmea_push_char(char c)
 {
   nmea_crc ^= c;
   nmea_buffer[nmea_buffer_index++] = c;
