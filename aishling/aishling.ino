@@ -12,7 +12,12 @@
 void setup() {
   // Give USB terminal time to start up
   RXLED1; // Yellow LED
-  delay(10000); // Time to open serial terminal
+  int i;
+  // Countdown - time to open terminal
+  for (i=10; i>0; i--) {
+    Serial.println(i);
+    delay(1000);
+  }
   RXLED0;
   startup_message();
 
@@ -59,9 +64,6 @@ void loop() {
         break;
       case 'e':
         ais_print_state();
-        break;
-      case 's':
-        Serial.println(radio_get_chip_status());
         break;
       default:
         break;

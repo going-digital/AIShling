@@ -142,13 +142,6 @@ int si4463_cmd(
 
 void radio_rx(uint8_t channel)
 {
-  if (channel) {
-    RXLED0;
-    TXLED1;
-  } else {
-    RXLED1;
-    TXLED0;
-  }
   uint8_t cmd[] = {CMD_START_RX, 0, 0, 0, 0, 0, 0, 0};
   cmd[1] = channel;
   si4463_cmd(8, cmd, 0, NULL);
@@ -374,6 +367,7 @@ void radio_setup() {
   pinMode(si4463_irq, INPUT);
   pinMode(si4463_gpio1, INPUT);
   pinMode(si4463_gpio0, INPUT);
+
   si4463_spi_end(); // Put SPI pins into idle state
 
   // Reset SI4463
@@ -383,28 +377,9 @@ void radio_setup() {
 
   // Program SI4463
   uint8_t *data = si4463_setup_data;
-  int n=1;
   while (*data) {
     int len = *data++;
     si4463_cmd(len, data, 0, NULL);
-    //Serial.print("Cmd ");
-    //Serial.print(n);
-    //Serial.print(":");
-    //radio_get_chip_status();
-    n++;
     data += len;
   }
-}
-uint8_t radio_get_chip_status() {
-  uint8_t result[4];
-  uint8_t cmd[] = {CMD_GET_CHIP_STATUS, 0};
-  si4463_cmd(2,cmd,4,result);
-  Serial.print(result[0]);
-  Serial.write(",");
-  Serial.print(result[1]);
-  Serial.write(",");
-  Serial.print(result[2]);
-  Serial.write(",");
-  Serial.println(result[3]);
-  return result;
 }
