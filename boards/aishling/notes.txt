@@ -8,3 +8,7 @@ Scuplted with cap, badge positions
 Bud Industries USB7201C Farnell#2473229 £1.89 56x23x8.7 ext without cap
 Multicomp MCG1901 Farnell#1603603 £2.65 56x23x8.7
 
+Possible CPU architectures
+  * ATmega32U4 (eg. Arduino Leonardo, Sparkfun Pro Micro)
+  * Microchip
+  * Silicon Labs EZR32 series - low cost, with radio and PSU built in!
