@@ -1,0 +1,80 @@
+{
+    "info": {
+        "description": "USB A skeleton",
+        "notes": "Board thickness must be 2.0mm. Use gold plating. Add 30deg chamfer to front."
+    },
+    "pins": {
+        "1": {
+            "layout": {
+                "pad": "power",
+                "location": [0, -3.5],
+                "label": "VBUS"
+            }
+        },
+        "2": {
+            "layout": {
+                "pad": "data",
+                "location": [0, -1],
+                "label": "D-"
+            }
+        },
+        "3": {
+            "layout": {
+                "pad": "data",
+                "location": [0, 1]
+                "label": "D+"
+            }
+        },
+        "4": {
+            "layout": {
+                "pad": "power",
+                "location": [0, 3.5]
+                "label": "GND"
+            }
+        }
+    },
+    "layout": {
+        "assembly": {
+            "shapes": [{
+                "type": "rect",
+                "style": "stroke",
+                "stroke-width": 0.1,
+                "width": 8.4,
+                "height": 12,
+                "location": [4.2, 0]
+            }]
+        }
+    },
+    "pads": {
+        "power": {
+            "shapes": [{
+                "type": "rect",
+                "layers": ["top"],
+                "width": 7.41,
+                "height": 1,
+                "radii": {
+                    "tl": 0.5,
+                    "tr": 0.5,
+                    "bl": 0.5,
+                    "br": 0.5
+                },
+                "location": [-8.65, 0]
+            }]
+        },
+        "data": {
+            "shapes": [{
+                "type": "rect",
+                "layers": ["top"],
+                "width": 6.41,
+                "height": 1,
+                "radii": {
+                    "tl": 0.5,
+                    "tr": 0.5,
+                    "bl": 0.5,
+                    "br": 0.5
+                },
+                "location": [-8.65, 0]
+            }]
+        }
+    }
+}
