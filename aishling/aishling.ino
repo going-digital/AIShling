@@ -13,14 +13,19 @@ void setup() {
   pinMode(9, OUTPUT);
   analogWrite(9, 16);
   // Give USB terminal time to start up
+  delay(1000);
   startup_message();
-
+  delay(1000);
   // Set up radio
   Serial.print("Setting up radio...");
   radio_setup();
   Serial.println("done");
   analogWrite(9, 0);
-
+  delay(1000);
+  Serial.println("Test sequence");
+  radio_test();
+  delay(1000);
+  
   // Connect AIS decoder
   TXLED1; // Green
   attachInterrupt(

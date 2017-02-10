@@ -9,6 +9,9 @@ const int si4463_sck   = 14; // SPI
 const int si4463_miso  = 15; // SPI
 const int si4463_gpio1 = radio_data; // RX data, data guaranteed valid when clock rises.
 
+#define T_POR (6) // ms
+#define T_SPI (1) // us Simplification of SPI timing scheme in data sheet table 8
+
 /////////////////////////////////////////////////////////////////////////////
 // SI4463 defines
 /////////////////////////////////////////////////////////////////////////////
@@ -78,7 +81,7 @@ void si4463_spi_end() {
   digitalWrite(si4463_mosi, LOW);
   digitalWrite(si4463_sck, LOW);
   digitalWrite(si4463_nsel, HIGH);
-  delayMicroseconds(10);
+  delayMicroseconds(T_SPI);
 }
 
 // 8 bit SPI transaction with input and output
@@ -90,9 +93,9 @@ uint8_t si4463_byte(uint8_t out) {
     out <<= 1;
     digitalWrite(si4463_sck, HIGH); // Active edge
     res = (res << 1) | (digitalRead(si4463_miso) ? 1 : 0);
-    delayMicroseconds(10);
+    delayMicroseconds(T_SPI);
     digitalWrite(si4463_sck, LOW);
-    delayMicroseconds(10);
+    delayMicroseconds(T_SPI);
   }
   return res;
 }
@@ -108,7 +111,7 @@ bool si4463_wait_cts() {
     result = si4463_byte(0);
     si4463_spi_end();
     if (result == 0xff) break;
-    delayMicroseconds(10);
+    delayMicroseconds(T_SPI);
   }
   return (result == 0xff);
 }
@@ -351,7 +354,40 @@ uint8_t si4463_setup_data[] = {
 };
 
 void radio_test() {
-  // Test SPI bus
+  uint8_t result[32];
+  uint8_t command[16];
+  int i;
+  command[0] = CMD_PART_INFO;
+  si4463_cmd(1, command, 8, result);
+  Serial.print("SI");
+  Serial.print(result[1] >> 4,HEX);
+  Serial.print(result[1] & 15,HEX);
+  Serial.print(result[2] >> 4,HEX);
+  Serial.print(result[2] & 15,HEX);
+  Serial.print(" rev ");
+  Serial.print(result[0]);
+  Serial.print(" part build ");
+  Serial.print(result[3]);
+  Serial.print(" id ");
+  Serial.print(result[4]*256+result[5]);
+  Serial.print(" customer ");
+  Serial.print(result[6]);
+  Serial.print(" rom_id ");
+  Serial.println(result[7]);
+
+  command[0] = CMD_FUNC_INFO;
+  command[1] = 0;
+  si4463_cmd(1, command, 6, result);
+  Serial.print("Ext ");
+  Serial.print(result[0]);
+  Serial.print(" Branch ");
+  Serial.print(result[1]);
+  Serial.print(" Int ");
+  Serial.print(result[2]);
+  Serial.print(" Patch ");
+  Serial.print(result[3]*256+result[4]);
+  Serial.print(" Func ");
+  Serial.println(result[5]);
 }
 
 void radio_setup() {
@@ -370,8 +406,9 @@ void radio_setup() {
 
   // Reset SI4463
   digitalWrite(si4463_sdn, HIGH);
-  delayMicroseconds(1000);
+  delayMicroseconds(10);
   digitalWrite(si4463_sdn, LOW);
+  delay(T_POR); // Wait tPOR = 5ms
 
   // Program SI4463
   uint8_t *data = si4463_setup_data;

@@ -6,4 +6,4 @@ int radio_rssi();
 void radio_rx(uint8_t channel);
 
 uint8_t radio_get_chip_status();
-
+void radio_test();
