@@ -9,29 +9,29 @@
 
 enum PH_STATE {
   PH_STATE_OFF = 0,
-  PH_STATE_RESET,         // reset/restart packet handler
-  PH_STATE_WAIT_FOR_SYNC,     // wait for preamble (010101..) and start flag (0x7e)
+  PH_STATE_RESET,           // reset/restart packet handler
+  PH_STATE_WAIT_FOR_SYNC,   // wait for preamble (010101..) and start flag (0x7e)
   PH_STATE_PREFETCH,        // receive first 8 bits of packet
-  PH_STATE_RECEIVE_PACKET     // receive packet payload
+  PH_STATE_RECEIVE_PACKET   // receive packet payload
 };
 
 // packet handler errors
 enum PH_ERROR {
   PH_ERROR_NONE = 0,
-  PH_ERROR_STUFFBIT,    // invalid stuff-bit
-  PH_ERROR_NOEND,     // no end flag after more than 1020 bits, message too long
-  PH_ERROR_CRC,     // CRC error
-  PH_ERROR_RSSI_DROP    // signal strength fell below threshold
+  PH_ERROR_STUFFBIT,        // invalid stuff-bit
+  PH_ERROR_NOEND,           // no end flag after more than 1020 bits, message too long
+  PH_ERROR_CRC,             // CRC error
+  PH_ERROR_RSSI_DROP        // signal strength fell below threshold
 };
 
 enum PH_SYNC_STATE {
-	PH_SYNC_RESET = 0,			// reset/restart sync detection
-	PH_SYNC_0,					// last bit was a 0
-	PH_SYNC_1,					// last bit was a 1
-	PH_SYNC_FLAG				// detecting start flag
+	PH_SYNC_RESET = 0,			  // reset/restart sync detection
+	PH_SYNC_0,					      // last bit was a 0
+	PH_SYNC_1,					      // last bit was a 1
+	PH_SYNC_FLAG				      // detecting start flag
 };
 #define PH_PREAMBLE_LENGTH  8   // minimum number of alternating bits we need for a valid preamble
-#define PH_SYNC_TIMEOUT 16      // number of bits we wait for a preamble to start before changing channel
+#define PH_SYNC_TIMEOUT 32//16      // number of bits we wait for a preamble to start before changing channel
 
 volatile uint8_t ph_state = PH_STATE_RESET;
 volatile uint8_t ph_last_error = PH_ERROR_NONE;
@@ -54,7 +54,7 @@ void ais_interrupt() {
 
   // read data bit and decode NRZI
   rx_this_bit_NRZI = digitalRead(radio_data) ? 1 : 0;
-  rx_bit = !(rx_prev_bit_NRZI ^ rx_this_bit_NRZI); 	// NRZI decoding: change = 0-bit, no change = 1-bit, i.e. 00,11=>1, 01,10=>0, i.e. NOT(A XOR B)
+  rx_bit = (rx_prev_bit_NRZI != rx_this_bit_NRZI); 	// NRZI decoding: change = 0-bit, no change = 1-bit, i.e. 00,11=>1, 01,10=>0, i.e. NOT(A XOR B)
   rx_prev_bit_NRZI = rx_this_bit_NRZI;				// store encoded bit for next round of decoding
 
   // add decoded bit to bit-stream (receiving LSB first)
@@ -65,12 +65,12 @@ void ais_interrupt() {
   switch (ph_state) {
 
     // STATE: OFF
-    case PH_STATE_OFF:                              // state: off, do nothing
+    case PH_STATE_OFF:                            // state: off, do nothing
       break;
 
     // STATE: RESET
-    case PH_STATE_RESET:                            // state: reset, prepare state machine for next packet
-      rx_bitstream &= 0x8000;                       // reset bit-stream (but don't throw away incoming bit)
+    case PH_STATE_RESET:                          // state: reset, prepare state machine for next packet
+      rx_bitstream &= 0x8000;                     // reset bit-stream (but don't throw away incoming bit)
       rx_bit_count = 0;                           // reset bit counter
       fifo_new_packet();                          // reset fifo packet
       fifo_write_byte(ph_radio_channel);          // indicate channel for this packet
@@ -85,8 +85,8 @@ void ais_interrupt() {
       switch (rx_sync_state) {
           // SYNC STATE: RESET
           case PH_SYNC_RESET:                     // sub-state: (re)start sync process
-              TXLED0; RXLED0;
-              if (rx_bit_count > PH_SYNC_TIMEOUT){// if we exceeded sync time out
+              analogWrite(9, 0);
+              if (rx_bit_count > PH_SYNC_TIMEOUT) {// if we exceeded sync time out
                   ph_state = PH_STATE_RESET;      // reset state machine, will trigger channel hop
               }
               else {                              // else
@@ -160,11 +160,7 @@ void ais_interrupt() {
 
       // STATE: RECEIVE PACKET
       case PH_STATE_RECEIVE_PACKET:						// state: receiving packet data
-        if (ph_radio_channel) {
-          RXLED1;
-        } else {
-          TXLED1;
-        }
+        analogWrite(9, 32);
         rx_bit = rx_bitstream & 0x80;					// extract data bit for processing
 
         if (rx_one_count == 5) {						// if we expect a stuff-bit..

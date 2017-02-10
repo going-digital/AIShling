@@ -178,6 +178,15 @@
         "MH2": {
             "footprint": "hole-2mm",
             "location": [9, 5.5]
+        },
+        "ICx": {
+            "footprint": "attiny85_20m1",
+            "location": [0,20]
+        },
+        "CONx": {
+            "footprint": "usb_a_skeleton",
+            "location": [0,20],
+            "layer": "bottom"
         }
     },
     "config": {

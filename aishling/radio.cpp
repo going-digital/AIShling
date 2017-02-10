@@ -2,15 +2,12 @@
 #include "radio.h"
 
 const int si4463_sdn   = 2;  // Shutdown
-const int si4463_gpio3 = 3;  // TX antenna enable
-const int si4463_gpio2 = 4;  // RX antenna enable
 const int si4463_nsel  = 5;  // SPI
 const int si4463_mosi  = 6;  // SPI
-const int si4463_gpio0 = 7;  // RX clock
-const int si4463_irq   = 10; // Not used yet
+const int si4463_gpio0 = radio_clock;  // RX clock
 const int si4463_sck   = 14; // SPI
 const int si4463_miso  = 15; // SPI
-const int si4463_gpio1 = 16; // RX data, data guaranteed valid when clock rises.
+const int si4463_gpio1 = radio_data; // RX data, data guaranteed valid when clock rises.
 
 /////////////////////////////////////////////////////////////////////////////
 // SI4463 defines
@@ -170,8 +167,8 @@ uint8_t si4463_setup_data[] = {
   0x08, CMD_GPIO_PIN_CFG,
     0x11, // GPIO0 - RX_DATA_CLK
     0x14, // GPIO1 - RX_DATA
-    0x21, // GPIO2 - RX_STATE
-    0x20, // GPIO3 - TX_STATE
+    0x61, // GPIO2 - RX_STATE mfr uses 0x61
+    0x60, // GPIO3 - TX_STATE mfr uses 0x60
     0x00, // NIRQ - DONOTHING
     0x00, // SDO - DONOTHING
     0x00, // GEN_CONFIG - DRV_STRENGTH max
@@ -353,18 +350,19 @@ uint8_t si4463_setup_data[] = {
   0x00
 };
 
+void radio_test() {
+  // Test SPI bus
+}
+
 void radio_setup() {
   // Upload configuration to radio.
   // This is a 2GMSK demodulator channel hopping between AIS1 and AIS2.
   // Data on GPIO0, Clock on GPIO1.
   pinMode(si4463_sdn, OUTPUT);
-  pinMode(si4463_gpio3, INPUT);
-  pinMode(si4463_gpio2, INPUT);
   pinMode(si4463_nsel, OUTPUT);
   pinMode(si4463_mosi, OUTPUT);
   pinMode(si4463_miso, INPUT);
   pinMode(si4463_sck, OUTPUT);
-  pinMode(si4463_irq, INPUT);
   pinMode(si4463_gpio1, INPUT);
   pinMode(si4463_gpio0, INPUT);
 

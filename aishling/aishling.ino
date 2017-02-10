@@ -10,21 +10,16 @@
 // Setup
 //////////////////////////////////////////////////////////////////////////////
 void setup() {
+  pinMode(9, OUTPUT);
+  analogWrite(9, 16);
   // Give USB terminal time to start up
-  RXLED1; // Yellow LED
-  int i;
-  // Countdown - time to open terminal
-  for (i=10; i>0; i--) {
-    Serial.println(i);
-    delay(1000);
-  }
-  RXLED0;
   startup_message();
 
   // Set up radio
   Serial.print("Setting up radio...");
   radio_setup();
   Serial.println("done");
+  analogWrite(9, 0);
 
   // Connect AIS decoder
   TXLED1; // Green
