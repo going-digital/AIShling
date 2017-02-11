@@ -1,5 +1,6 @@
 #include "Arduino.h"
 #include "radio.h"
+#include <avr/pgmspace.h>
 
 const int si4463_sdn   = 2;  // Shutdown
 const int si4463_nsel  = 5;  // SPI
@@ -159,7 +160,7 @@ int radio_rssi()
   return ((int) result >> 1) - 134;
 }
 
-uint8_t si4463_setup_data[] = {
+const uint8_t si4463_setup_data[] PROGMEM = {
   // Power up radio
   0x07, CMD_POWER_UP,
     0x01, //BOOT_OPTIONS - NO_PATCH, PRO mode
@@ -391,6 +392,7 @@ void radio_test() {
 }
 
 void radio_setup() {
+  uint8_t si4463_cmd_buffer[16];
   // Upload configuration to radio.
   // This is a 2GMSK demodulator channel hopping between AIS1 and AIS2.
   // Data on GPIO0, Clock on GPIO1.
@@ -411,10 +413,19 @@ void radio_setup() {
   delay(T_POR); // Wait tPOR = 5ms
 
   // Program SI4463
-  uint8_t *data = si4463_setup_data;
-  while (*data) {
-    int len = *data++;
-    si4463_cmd(len, data, 0, NULL);
-    data += len;
+  //uint8_t *data = si4463_setup_data;
+  //while (*data) {
+  //  int len = *data++;
+  //  si4463_cmd(len, data, 0, NULL);
+  //  data += len;
+  //}
+  int i = 0;
+  while (pgm_read_byte_near(si4463_setup_data+i)) {
+    int len;
+    len = pgm_read_byte_near(si4463_setup_data + i);
+    i++;
+    memcpy_P(si4463_cmd_buffer, si4463_setup_data + i, len);
+    si4463_cmd(len, si4463_cmd_buffer, 0, NULL);
+    i += len;
   }
 }
