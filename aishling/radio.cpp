@@ -375,6 +375,14 @@ void radio_test() {
   Serial.print(result[6]);
   Serial.print(" rom_id ");
   Serial.println(result[7]);
+  if ((result[1]==0x44) && (result[2]==0x63) && (result[7]==0x03)) {
+    Serial.println("Si4463B1B");
+  } else if ((result[1]==0x44) && (result[2]==0x63) && (result[7]==0x06)) {
+    Serial.println("Si4463C2A");
+  } else {
+    Serial.println("Device not recognised");
+  }
+  
 
   command[0] = CMD_FUNC_INFO;
   command[1] = 0;
