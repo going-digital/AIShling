@@ -52,7 +52,7 @@ void ais_interrupt() {
 
   // read data bit and decode NRZI
   rx_this_bit_NRZI = digitalRead(radio_data) ? 1 : 0;
-  rx_bit = (rx_prev_bit_NRZI != rx_this_bit_NRZI); 	// NRZI decoding: change = 0-bit, no change = 1-bit, i.e. 00,11=>1, 01,10=>0, i.e. NOT(A XOR B)
+  rx_bit = !(rx_prev_bit_NRZI ^ rx_this_bit_NRZI); 	// NRZI decoding: change = 0-bit, no change = 1-bit, i.e. 00,11=>1, 01,10=>0, i.e. NOT(A XOR B)
   rx_prev_bit_NRZI = rx_this_bit_NRZI;				// store encoded bit for next round of decoding
 
   // add decoded bit to bit-stream (receiving LSB first)
@@ -149,7 +149,6 @@ void ais_interrupt() {
           rx_data_byte = 0;							// reset buffer for data byte
           rx_crc = 0xffff;							// init CRC calculation
           ph_state = PH_STATE_RECEIVE_PACKET;			// next state: receive and process packet
-          break;
         }
         break;											// do nothing for the first 8 bits to fill buffer
 
@@ -184,19 +183,17 @@ void ais_interrupt() {
       }
       rx_bit_count++;									// count valid, de-stuffed data bits
       if ((rx_bitstream & 0xff00) == 0x7e00) {		// if we found the end flag 0x7e we're done
-        Serial.println(rx_crc,HEX);
-        //if (rx_crc != 0xf0b8)						// if CRC verification failed
-        //  ph_last_error = PH_ERROR_CRC;			// report CRC error
-        //else {
+        //Serial.println(rx_crc,HEX);
+        if (rx_crc != 0xf0b8)						// if CRC verification failed
+          ph_last_error = PH_ERROR_CRC;			// report CRC error
+        else {
           fifo_commit_packet();					// else commit packet in FIFO
-        //}
+        }
         ph_state = PH_STATE_RESET;					// reset state machine
-        break;
       }
-      if (rx_bit_count > 1020) {						// if packet is too long, it's probably invalid
+      else if (rx_bit_count > 1020) {						// if packet is too long, it's probably invalid
         ph_last_error = PH_ERROR_NOEND;				// report error
         ph_state = PH_STATE_RESET;					// reset state machine
-        break;
       }
       break;
   }
@@ -235,3 +232,11 @@ void ais_print_state() {
       break;
   }
 }
+
+void ais_setup() {
+  ph_last_error = PH_ERROR_NONE;
+  ph_radio_channel = 0;
+  ph_state = PH_STATE_RESET;
+  fifo_reset();
+}
+

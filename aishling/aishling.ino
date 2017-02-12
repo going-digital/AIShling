@@ -10,6 +10,8 @@
 // Setup
 //////////////////////////////////////////////////////////////////////////////
 void setup() {
+  ais_setup();
+  
   while (!Serial);
   // Give USB terminal time to start up
   startup_message();

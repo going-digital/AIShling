@@ -5,4 +5,5 @@ void ais_interrupt();
 void ais_print_state();
 void ais_off();
 void ais_on();
+void ais_setup();
 

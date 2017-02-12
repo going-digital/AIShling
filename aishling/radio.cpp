@@ -367,7 +367,7 @@ const uint8_t si4463_setup_data[] PROGMEM = {
     0x00, 0x62, // MODEM_RAW_EYE ais_transponder: 006A
     0x01,// MODEM_ANT_DIV_MODE ais_transponder: 02
     0x80, // MODEM_ANT_DIV_CONTROL ais_transponder: 00
-    0x80, // MODEM_RSSI_THRESH ais_transponder: 0x46
+    0x46, // MODEM_RSSI_THRESH ais_transponder: 0x46
     // ais_transponder continues 06 23
   0x05, CMD_SET_PROPERTY, GRP_MODEM, 0x01, 0x4C,
     0x03, // ais_transponder: 09 (reset from line above!)
