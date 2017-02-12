@@ -58,23 +58,22 @@ Wire the modules together as follows
 | M4463D | Pro Micro  | Signal      |
 |--------|------------|-------------|
 | VDD    | VDD        | 3.3V power  |
-| GPIO0  | D7         | RX clock    |
-| GPIO1  | D16        | RX data     |
+| GPIO0  | D2         | RX clock    |
+| GPIO1  | D3         | RX data     |
 | IRQ    | no connect | Not used    |
-| SCK    | D14        | SPI clock   |
-| MISO   | D15        | SPI data    |
-| MOSI   | D6         | SPI data    |
-| NSEL   | D5         | SPI select  |
+| SCK    | D15        | SPI clock   |
+| MISO   | D14        | SPI data    |
+| MOSI   | D16        | SPI data    |
+| NSEL   | D10        | SPI select  |
 | GPIO2  | no connect | RX enable   |
 | GPIO3  | no connect | TX enable   |
-| SDN    | D2         | Radio reset |
+| SDN    | D9         | Radio reset |
 | GND    | GND        | 0V          |
 TODO: Add schematic
-
 
 TODO: Add DSC support
 
 ## Notes
-Cheap Sparkfun Pro Micro clones may not be programmed correctly - the ones the
-author ordered arrived with the JTAG pins enabled, which means the Analog
-pins A0-A3 can *NOT* be used for digital output.
+Cheap Sparkfun Pro Micro clones are not programmed correctly. Use Arduino ISP
+or other ISP programming method to reprogram the bootloader from the Arduino
+IDE.

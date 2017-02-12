@@ -10,21 +10,20 @@
 // Setup
 //////////////////////////////////////////////////////////////////////////////
 void setup() {
-  pinMode(9, OUTPUT);
-  analogWrite(9, 16);
+  while (!Serial);
   // Give USB terminal time to start up
-  delay(1000);
   startup_message();
-  delay(1000);
   // Set up radio
   Serial.print("Setting up radio...");
+  unsigned long t;
+  t = millis();
   radio_setup();
-  Serial.println("done");
-  analogWrite(9, 0);
-  delay(1000);
-  Serial.println("Test sequence");
+  t = millis() - t;
+  Serial.print("done in ");
+  Serial.print(t);
+  Serial.println("ms");
+
   radio_test();
-  delay(1000);
   
   // Connect AIS decoder
   TXLED1; // Green
@@ -37,14 +36,14 @@ void setup() {
 
 void startup_message() {
   // Startup message
-  Serial.println("    _|_|    _|_|_|    _|_|_|  _|        _|  _|                      ");
-  Serial.println("  _|    _|    _|    _|        _|_|_|    _|      _|_|_|      _|_|_|  ");
-  Serial.println("  _|_|_|_|    _|      _|_|    _|    _|  _|  _|  _|    _|  _|    _|  ");
-  Serial.println("  _|    _|    _|          _|  _|    _|  _|  _|  _|    _|  _|    _|  ");
-  Serial.println("  _|    _|  _|_|_|  _|_|_|    _|    _|  _|  _|  _|    _|    _|_|_|  ");
-  Serial.println("                                                                _|  ");
-  Serial.println("  _|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|    ");
+  Serial.println("AIShling: AIS receiver");
+  Serial.println("http://github.com/going-digital/AIShling");
   Serial.println();
+  Serial.println("h: help");
+  Serial.println("e: AIS state");
+  Serial.println("f: Radio crystal finetune");
+  Serial.println("q: Enable oscillator output");
+  Serial.println("w: Disable oscillator output");
 }
 
 ////////////////////////////////////////////////////////////////////////////// 
@@ -52,7 +51,6 @@ void startup_message() {
 //////////////////////////////////////////////////////////////////////////////
 void loop() {
   if (fifo_get_packet()) {
-    Serial.println("Packet!");
     nmea_process_packet();
     fifo_remove_packet();
   }
@@ -65,6 +63,20 @@ void loop() {
       case 'e':
         ais_print_state();
         break;
+      case 'f':
+        ais_off();
+        radio_finetune();
+        ais_on();
+        break;
+      case 'q':
+        radio_test_clock(true);
+        Serial.println("30MHz test output on NIRQ enabled");
+        break;
+      case 'w':
+        radio_test_clock(false);
+        Serial.println("30MHz test output on NIRQ disabled");
+        break;
+
       default:
         break;
     }

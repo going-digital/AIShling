@@ -3,4 +3,6 @@ void ph_start(void);				// start receiving packages
 void ph_stop(void);					// stop receiving packages
 void ais_interrupt();
 void ais_print_state();
+void ais_off();
+void ais_on();
 
