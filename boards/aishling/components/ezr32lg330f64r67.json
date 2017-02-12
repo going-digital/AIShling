@@ -1,0 +1,548 @@
+{
+    "info": {
+        "description": "Microcontroller",
+        "manufacturer": "Silicon Labs",
+        "part-number": "EZR32LG330F64R67G-B0",
+        "suppliers": {
+            "farnell": "2475203"
+        },
+        "notes": "QFN64 package"
+    },
+    "pins": {
+        "1": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [-4.435, 3.75],
+                "label": "DNC"
+            }
+        },
+        "2": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [-4.435, 3.25],
+                "label": "RXP"
+            }
+        },
+        "3": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [-4.435, 2.75],
+                "label": "RXN"
+            }
+        },
+        "4": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [-4.435, 2.25],
+                "label": "TX_13_16"
+            }
+        },
+        "5": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [-4.435, 1.75],
+                "label": "TX_20"
+            }
+        },
+        "6": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [-4.435, 1.25],
+                "label": "DNC"
+            }
+        },
+        "7": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [-4.435, 0.75],
+                "label": "RFVDD_2"
+            }
+        },
+        "8": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [-4.435, 0.25],
+                "label": "TXRAMP"
+            }
+        },
+        "9": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [-4.435, -0.25],
+                "label": "RFVDD_1"
+            }
+        },
+        "10": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [-4.435, -0.75],
+                "label": "PA0_GPIO0"
+            }
+        },
+        "11": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [-4.435, -1.25],
+                "label": "PA1_GPIO1"
+            }
+        },
+        "12": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [-4.435, -1.75],
+                "label": "IOVDD_0"
+            }
+        },
+        "13": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [-4.435, -2.25],
+                "label": "PB3"
+            }
+        },
+        "14": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [-4.435, -2.75],
+                "label": "PB4"
+            }
+        },
+        "15": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [-4.435, -3.25],
+                "label": "PB5"
+            }
+        },
+        "16": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [-4.435, -3.75],
+                "label": "PB6"
+            }
+        },
+
+        "17": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [-3.75, -4.435],
+                "label": "PB7"
+            }
+        },
+        "18": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [-3.25, -4.435],
+                "label": "PB8"
+            }
+        },
+        "19": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [-2.75, -4.435],
+                "label": "PA12"
+            }
+        },
+        "20": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [-2.25, -4.435],
+                "label": "PA13"
+            }
+        },
+        "21": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [-1.75, -4.435],
+                "label": "PA14"
+            }
+        },
+        "22": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [-1.25, -4.435],
+                "label": "RESETn"
+            }
+        },
+        "23": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [-0.75 -4.435],
+                "label": "PB11"
+            }
+        },
+        "24": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [-0.25, -4.435],
+                "label": "AVDD_1"
+            }
+        },
+        "25": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [0.25, -4.435],
+                "label": "PB13"
+            }
+        },
+        "26": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [0.75, -4.435],
+                "label": "PB14"
+            }
+        },
+        "27": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [1.25, -4.435],
+                "label": "IOVDD_3"
+            }
+        },
+        "28": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [1.75, -4.435],
+                "label": "AVDD_0"
+            }
+        },
+        "29": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [2.25, -4.435],
+                "label": "PD0"
+            }
+        },
+        "30": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [2.75, -4.435],
+                "label": "PD1"
+            }
+        },
+        "31": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [3.25, -4.435],
+                "label": "PD2"
+            }
+        },
+        "32": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [3.75, -4.435],
+                "label": "PD3"
+            }
+        },
+
+        "33": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [4.435, -3.75],
+                "label": "PD4"
+            }
+        },
+        "34": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [4.435, -3.25],
+                "label": "PD5"
+            }
+        },
+        "35": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [4.435, -2.75],
+                "label": "PD6"
+            }
+        },
+        "36": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [4.435, -2.25],
+                "label": "PD7"
+            }
+        },
+        "37": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [4.435, -1.75],
+                "label": "PD8"
+            }
+        },
+        "38": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [4.435, -1.25],
+                "label": "PC6"
+            }
+        },
+        "39": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [4.435, -0.75],
+                "label": "PC7"
+            }
+        },
+        "40": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [4.435, -0.25],
+                "label": "VDD_DREG"
+            }
+        },
+        "41": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [4.435, 0.25],
+                "label": "DEC_0"
+            }
+        },
+        "42": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [4.435, 0.75],
+                "label": "PE0"
+            }
+        },
+        "43": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [4.435, 1.25],
+                "label": "PE1"
+            }
+        },
+        "44": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [4.435, 1.75],
+                "label": "PE2"
+            }
+        },
+        "45": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [4.435, 2.25],
+                "label": "PE3"
+            }
+        },
+        "46": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [4.435, 2.75],
+                "label": "USB_VREGI"
+            }
+        },
+        "47": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [4.435, 3.25],
+                "label": "USB_VREGO"
+            }
+        },
+        "48": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [4.435, 3.75],
+                "label": "PF10"
+            }
+        },
+
+        "49": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [3.75, 4.435],
+                "label": "PF11"
+            }
+        },
+        "50": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [3.25, 4.435],
+                "label": "PF0"
+            }
+        },
+        "51": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [2.75, 4.435],
+                "label": "PF1"
+            }
+        },
+        "52": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [2.25, 4.435],
+                "label": "PF2"
+            }
+        },
+        "53": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [1.75, 4.435],
+                "label": "PF3"
+            }
+        },
+        "54": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [1.25, 4.435],
+                "label": "USB_VBUS"
+            }
+        },
+        "55": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [0.75, 4.435],
+                "label": "PF4"
+            }
+        },
+        "56": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [0.25, 4.435],
+                "label": "PF5"
+            }
+        },
+        "57": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [-0.25, 4.435],
+                "label": "IOVDD_5"
+            }
+        },
+        "58": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [-0.75, 4.435],
+                "label": "PF6"
+            }
+        },
+        "59": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [-1.25, 4.435],
+                "label": "PF7"
+            }
+        },
+        "60": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [-1.75, 4.435],
+                "label": "PF8"
+            }
+        },
+        "61": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [-2.25, 4.435],
+                "label": "XOUT"
+            }
+        },
+        "62": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [-2.75, 4.435],
+                "label": "XIN"
+            }
+        },
+        "63": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [-3.25, 4.435],
+                "label": "GPIO2"
+            }
+        },
+        "64": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [-3.75, 4.435],
+                "label": "GPIO3"
+            }
+        },
+
+        "TH": {
+            "layout": {
+                "pad": "pad_c",
+                "location": [0, 0],
+                "label": "TH"
+            }
+        }
+    },
+    "layout": {
+        "silkscreen": {
+            "shapes": [{
+                    "type": "rect",
+                    "width": 11,
+                    "height": 11,
+                    "location": [0, 0]
+                },
+                {
+                    "type": "circle",
+                    "diameter": 0.6,
+                    "style": "fill",
+                    "location": [-5, 5]
+                }
+            ]
+        },
+        "assembly": {
+            "shapes": [{
+                    "type": "rect",
+                    "width": 9,
+                    "height": 9,
+                    "location": [0, 0]
+                },
+                {
+                    "type": "circle",
+                    "diameter": 0.4,
+                    "style": "fill",
+                    "location": [-4, 4]
+                }
+            ]
+        }
+    },
+    "pads": {
+        "pad_a": {
+            "shapes": [{
+                "layers": ["top"],
+                "type": "rect",
+                "width": 0.7,
+                "height": 0.25,
+                "radii": {
+                    "tl": 0.1,
+                    "tr": 0.1,
+                    "bl": 0.1,
+                    "br": 0.1
+                }
+            }]
+        },
+        "pad_b": {
+            "shapes": [{
+                "layers": ["top"],
+                "type": "rect",
+                "width": 0.25,
+                "height": 0.7,
+                "radii": {
+                    "tl": 0.1,
+                    "tr": 0.1,
+                    "bl": 0.1,
+                    "br": 0.1
+                }
+            }]
+        },
+        "pad_c": {
+            "shapes": [{
+                "layers": ["top"],
+                "type": "rect",
+                "width": 7.55,
+                "height": 7.55,
+                "radii": {
+                    "tl": 0.25,
+                    "tr": 0.25,
+                    "bl": 0.25,
+                    "br": 0.25
+                }
+            }]
+        }
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "pins": {
+        "MH": {
+            "layout": {
+                "pad": "drill",
+                "location": [0, 0],
+                "show-label": false
+            }
+        }
+    },
+    "layout": {
+        "silkscreen": {},
+        "assembly": {
+            "shapes": [{
+                "type": "circle",
+                "layer": ["top", "bottom"],
+                "diameter": 2.5
+            }]
+        }
+    },
+    "pads": {
+        "drill": {
+            "shapes": [],
+            "drills": [{
+                "diameter": 2
+            }]
+        }
+    }
+}

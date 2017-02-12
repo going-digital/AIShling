@@ -1,0 +1,484 @@
+{
+  "components": {
+    "CON1": {
+      "footprint": "usb_a_skeleton",
+      "layer": "bottom",
+      "location": [
+        -4,
+        0
+      ],
+      "silkscreen": {
+        "refdef": {
+          "show": false
+        }
+      }
+    },
+    "CON2": {
+      "footprint": "tc2030_idc_nl_avrisp",
+      "layer": "top",
+      "location": [
+        1,
+        -3.5
+      ],
+      "silkscreen": {
+        "refdef": {
+          "show": false
+        }
+      }
+    },
+    "IC1": {
+      "footprint": "attiny85_20m1",
+      "location": [
+        -1.2,
+        1
+      ],
+      "rotate": 135,
+      "silkscreen": {
+        "refdef": {
+          "show": false
+        }
+      }
+    },
+    "R1": {
+      "footprint": "0603_68R",
+      "layer": "top",
+      "location": [
+        2.5,
+        0
+      ],
+      "rotate": 90,
+      "show": true,
+      "silkscreen": {
+        "refdef": {
+          "show": false
+        }
+      }
+    },
+    "R2": {
+      "footprint": "0603_68R",
+      "layer": "top",
+      "location": [
+        3,
+        2
+      ],
+      "show": true,
+      "silkscreen": {
+        "refdef": {
+          "show": false
+        }
+      }
+    },
+    "R3": {
+      "footprint": "0603_1K5",
+      "layer": "top",
+      "location": [
+        3.7,
+        4
+      ],
+      "rotate": 90,
+      "show": true,
+      "silkscreen": {
+        "refdef": {
+          "show": false
+        }
+      }
+    },
+    "R4": {
+      "footprint": "0603_10K",
+      "layer": "top",
+      "location": [
+        1.5,
+        4.2
+      ],
+      "rotate": 0,
+      "show": true,
+      "silkscreen": {
+        "refdef": {
+          "show": false
+        }
+      }
+    },
+    "SYM_OSHWA": {
+      "assembly": {
+        "refdef": {
+          "show": false
+        }
+      },
+      "footprint": "oshwa",
+      "location": [
+        -2.2,
+        4.2
+      ],
+      "rotate": 90,
+      "scale": 0.4,
+      "silkscreen": {
+        "refdef": {
+          "show": false
+        }
+      }
+    },
+    "SYM_WEEE": {
+      "assembly": {
+        "refdef": {
+          "show": false
+        }
+      },
+      "footprint": "weee",
+      "location": [
+        8,
+        0
+      ],
+      "scale": 0.3,
+      "silkscreen": {
+        "refdef": {
+          "show": false
+        }
+      }
+    },
+    "V1": {
+      "assembly": {
+        "refdef": {
+          "show": false
+        }
+      },
+      "footprint": "via 7 20",
+      "location": [
+        -3,
+        3.5
+      ],
+      "silkscreen": {
+        "refdef": {
+          "show": false
+        }
+      }
+    },
+    "V10": {
+      "assembly": {
+        "refdef": {
+          "show": false
+        }
+      },
+      "footprint": "via 7 20",
+      "location": [
+        1.67,
+        -5
+      ],
+      "silkscreen": {
+        "refdef": {
+          "show": false
+        }
+      }
+    },
+    "V11": {
+      "assembly": {
+        "refdef": {
+          "show": false
+        }
+      },
+      "footprint": "via 7 20",
+      "location": [
+        0,
+        5
+      ],
+      "silkscreen": {
+        "refdef": {
+          "show": false
+        }
+      }
+    },
+    "V2": {
+      "assembly": {
+        "refdef": {
+          "show": false
+        }
+      },
+      "footprint": "via 7 20",
+      "location": [
+        4,
+        1
+      ],
+      "silkscreen": {
+        "refdef": {
+          "show": false
+        }
+      }
+    },
+    "V3": {
+      "assembly": {
+        "refdef": {
+          "show": false
+        }
+      },
+      "footprint": "via 7 20",
+      "location": [
+        4,
+        -1
+      ],
+      "silkscreen": {
+        "refdef": {
+          "show": false
+        }
+      }
+    },
+    "V5": {
+      "assembly": {
+        "refdef": {
+          "show": false
+        }
+      },
+      "footprint": "via 7 20",
+      "location": [
+        1.65,
+        -2.2
+      ],
+      "silkscreen": {
+        "refdef": {
+          "show": false
+        }
+      }
+    },
+    "V6": {
+      "assembly": {
+        "refdef": {
+          "show": false
+        }
+      },
+      "footprint": "via 7 20",
+      "location": [
+        0.4,
+        -5
+      ],
+      "silkscreen": {
+        "refdef": {
+          "show": false
+        }
+      }
+    },
+    "V7": {
+      "assembly": {
+        "refdef": {
+          "show": false
+        }
+      },
+      "footprint": "via 7 20",
+      "location": [
+        -3.5,
+        1
+      ],
+      "silkscreen": {
+        "refdef": {
+          "show": false
+        }
+      }
+    },
+    "V8": {
+      "assembly": {
+        "refdef": {
+          "show": false
+        }
+      },
+      "footprint": "via 7 20",
+      "location": [
+        -3,
+        -3
+      ],
+      "silkscreen": {
+        "refdef": {
+          "show": false
+        }
+      }
+    },
+    "V9": {
+      "assembly": {
+        "refdef": {
+          "show": false
+        }
+      },
+      "footprint": "via 7 20",
+      "location": [
+        -2.2,
+        -2
+      ],
+      "silkscreen": {
+        "refdef": {
+          "show": false
+        }
+      }
+    },
+    "y": {
+      "assembly": {
+        "refdef": {
+          "show": false
+        }
+      },
+      "footprint": "weee",
+      "location": [
+        -20,
+        0
+      ],
+      "silkscreen": {
+        "refdef": {
+          "show": false
+        }
+      }
+    }
+  },
+  "config": {
+    "name": "usbthing",
+    "no-docs": false,
+    "no-drill-index": false,
+    "no-flashes": false,
+    "no-layer-index": false,
+    "rev": "A",
+    "style-layout": "default",
+    "units": "mm"
+  },
+  "distances": {
+    "from-pour-to": {
+      "drill": 0.4,
+      "outline": 0.25,
+      "pad": 0.3,
+      "route": 0.25
+    },
+    "soldermask": {
+      "circle-buffer": 0.05,
+      "path-scale": 1.05,
+      "rect-buffer": 0.05
+    },
+    "solderpaste": {
+      "circle-buffer": -0.1,
+      "path-scale": 0.9,
+      "rect-buffer": -0.1
+    }
+  },
+  "documentation": {
+    "board-details": {
+      "font-family": "Overlock-Regular-OTF-webfont",
+      "font-size": "1.5mm",
+      "letter-spacing": "0mm",
+      "line-height": "1.5mm",
+      "location": [
+        -49.595894,
+        -61.434224
+      ],
+      "rotate": 0,
+      "style": "fill",
+      "type": "text",
+      "value": "Board details:\nName: USBthing\nRevision: A\nDescription: USB thing\nLicense: MIT\nDesigner: Peter Knight"
+    },
+    "manufacturing": {
+      "font-family": "Overlock-Regular-OTF-webfont",
+      "font-size": "1.5mm",
+      "letter-spacing": "0mm",
+      "line-height": "1.5mm",
+      "location": [
+        -46.431832,
+        -74.666223
+      ],
+      "rotate": 0,
+      "style": "fill",
+      "type": "text",
+      "value": "Manufacturing:\nRoHS and lead free compliant manufacturing process\nUnit of length: Millimetre (mm)\nNumber of layers: 2 ('top', 'bottom')\nBoard thickness: 0.8 mm\nMaterial: FR4 70/70 um copper\nSilkscreen: top (white)\nSoldermask: top (purple), bottom (purple)\nSurface finish: RoHS lead free"
+    },
+    "pcbmode": {
+      "font-family": "Overlock-Regular-OTF-webfont",
+      "font-size": "1.2mm",
+      "letter-spacing": "0mm",
+      "line-height": "1.2mm",
+      "location": [
+        -50.241817,
+        -85.439666
+      ],
+      "rotate": 0,
+      "style": "fill",
+      "type": "text",
+      "value": "Designed with PCBmodE, an open source software\n     http://pcbmode.com\nStay updated:\n     @boldport @pcbmode http://boldport.com"
+    }
+  },
+  "drill-index": {
+    "location": [
+      -62.363106,
+      -50.112271
+    ]
+  },
+  "drills": {},
+  "files": {
+    "routing-data": "usbthing_routing.json",
+    "routing-svg": "usbthing.svg"
+  },
+  "gerber": {
+    "decimals": 6,
+    "digits": 6,
+    "min-segment-length": 0.05,
+    "steps-per-segment": 100
+  },
+  "outline": {
+    "measurements": {
+      "font-family": "UbuntuMono-R-webfont",
+      "scale": 0.0008
+    },
+    "shape": {
+      "height": 12,
+      "location": [
+        0,
+        0
+      ],
+      "type": "rect",
+      "width": 9
+    }
+  },
+  "shapes": {
+    "INFO": {
+      "footprint": "text",
+      "layer": "top",
+      "location": [
+        27.558049,
+        -13.480169
+      ],
+      "rotate": 90,
+      "show": true
+    },
+    "PR": {
+      "footprint": "pours",
+      "layer": "top",
+      "location": [
+        0,
+        0
+      ],
+      "show": false
+    },
+    "SM": {
+      "footprint": "soldermask",
+      "layer": "top",
+      "location": [
+        -2.57,
+        -0.47
+      ],
+      "show": false
+    },
+    "SS": {
+      "footprint": "silkscreen",
+      "layer": "top",
+      "location": [
+        0,
+        0
+      ],
+      "show": false
+    }
+  },
+  "soldermask": {
+    "circle-buffer": 0.05,
+    "path-scale": 1.05,
+    "rect-buffer": 0.05,
+    "scale": 1.1
+  },
+  "solderpaste": {
+    "circle-buffer": -0.1,
+    "path-scale": 0.9,
+    "rect-buffer": -0.1,
+    "scale": 0.9
+  },
+  "vias": {
+    "default-via": "VIA"
+  }
+}

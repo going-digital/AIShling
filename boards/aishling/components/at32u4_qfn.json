@@ -1,0 +1,404 @@
+{
+    "info": {
+        "description": "Microcontroller",
+        "manufacturer": "Atmel",
+        "part-number": "ATmega32U4-MUR",
+        "suppliers": {
+            "farnell": "2484909"
+        },
+        "notes": "QFN44 packager"
+    },
+    "pins": {
+        "1": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [-3.5, 2.5],
+                "label": "PE6"
+            }
+        },
+        "2": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [-3.5, 2.0],
+                "label": "UVcc"
+            }
+        },
+        "3": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [-3.5, 1.5],
+                "label": "D-"
+            }
+        },
+        "4": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [-3.5, 1.0],
+                "label": "D+"
+            }
+        },
+        "5": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [-3.5, 0.5],
+                "label": "UGnd"
+            }
+        },
+        "6": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [-3.5, 0],
+                "label": "UCap"
+            }
+        },
+        "7": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [-3.5, -0.5],
+                "label": "VBus"
+            }
+        },
+        "8": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [-3.5, -1],
+                "label": "PB0"
+            }
+        },
+        "9": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [-3.5, -1.5],
+                "label": "PB1_SCK"
+            }
+        },
+        "10": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [-3.5, -2],
+                "label": "PB2_PDI"
+            }
+        },
+        "11": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [-3.5, -2.5],
+                "label": "PB3_PDO"
+            }
+        },
+        "12": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [-2.5, -3.5],
+                "label": "PB7"
+            }
+        },
+        "13": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [-2.0, -3.5],
+                "label": "nRESET"
+            }
+        },
+        "14": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [-1.5, -3.5],
+                "label": "VCC"
+            }
+        },
+        "15": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [-1.0, -3.5],
+                "label": "GND"
+            }
+        },
+        "16": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [-0.5, -3.5],
+                "label": "XTAL2"
+            }
+        },
+        "17": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [0, -3.5],
+                "label": "XTAL1"
+            }
+        },
+        "18": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [0.5, -3.5],
+                "label": "PD0"
+            }
+        },
+        "19": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [1.0, -3.5],
+                "label": "PD1"
+            }
+        },
+        "20": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [1.5, -3.5],
+                "label": "PD2"
+            }
+        },
+        "21": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [2.0, -3.5],
+                "label": "PD3"
+            }
+        },
+        "22": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [2.5, -3.5],
+                "label": "PD5"
+            }
+        },
+        "23": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [3.5, -2.5],
+                "label": "GND"
+            }
+        },
+        "24": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [3.5, -2.0],
+                "label": "AVcc"
+            }
+        },
+        "25": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [3.5, -1.5],
+                "label": "PD4"
+            }
+        },
+        "26": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [3.5, -1.0],
+                "label": "PD6"
+            }
+        },
+        "27": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [3.5, -0.5],
+                "label": "PD7"
+            }
+        },
+        "28": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [3.5, 0],
+                "label": "PB4"
+            }
+        },
+        "29": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [3.5, 0.5],
+                "label": "PB5"
+            }
+        },
+        "30": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [3.5, 1],
+                "label": "PB6"
+            }
+        },
+        "31": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [3.5, 1.5],
+                "label": "PC6"
+            }
+        },
+        "32": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [3.5, 2],
+                "label": "PC7"
+            }
+        },
+        "33": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [3.5, 2.5],
+                "label": "PE2"
+            }
+        },
+        "34": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [2.5, 3.5],
+                "label": "VCC"
+            }
+        },
+        "35": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [2.0, 3.5],
+                "label": "GND"
+            }
+        },
+        "36": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [1.5, 3.5],
+                "label": "PF7"
+            }
+        },
+        "37": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [1.0, 3.5],
+                "label": "PF6"
+            }
+        },
+        "38": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [0.5, 3.5],
+                "label": "PF5"
+            }
+        },
+        "39": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [0, 3.5],
+                "label": "PF4"
+            }
+        },
+        "40": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [-0.5, 3.5],
+                "label": "PF1"
+            }
+        },
+        "41": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [-1.0, 3.5],
+                "label": "PF0"
+            }
+        },
+        "42": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [-1.5, 3.5],
+                "label": "AREF"
+            }
+        },
+        "43": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [-2.0, 3.5],
+                "label": "GND"
+            }
+        },
+        "44": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [-2.5, 3.5],
+                "label": "AVCC"
+            }
+        },
+        "TH": {
+            "layout": {
+                "pad": "pad_c",
+                "location": [0, 0],
+                "label": "TH"
+            }
+        }
+    },
+    "layout": {
+        "silkscreen": {
+            "shapes": [{
+                    "type": "rect",
+                    "width": 8,
+                    "height": 8,
+                    "location": [0, 0]
+                },
+                {
+                    "type": "circle",
+                    "diameter": 0.6,
+                    "style": "fill",
+                    "location": [-3.5, 3.5]
+                }
+            ]
+        },
+        "assembly": {
+            "shapes": [{
+                    "type": "rect",
+                    "width": 7,
+                    "height": 7,
+                    "location": [0, 0]
+                },
+                {
+                    "type": "circle",
+                    "diameter": 0.4,
+                    "style": "fill",
+                    "location": [-3, 3]
+                }
+            ]
+        }
+    },
+    "pads": {
+        "pad_a": {
+            "shapes": [{
+                "layers": ["top"],
+                "type": "rect",
+                "width": 0.7,
+                "height": 0.25,
+                "radii": {
+                    "tl": 0.1,
+                    "tr": 0.1,
+                    "bl": 0.1,
+                    "br": 0.1
+                }
+            }]
+        },
+        "pad_b": {
+            "shapes": [{
+                "layers": ["top"],
+                "type": "rect",
+                "width": 0.25,
+                "height": 0.7,
+                "radii": {
+                    "tl": 0.1,
+                    "tr": 0.1,
+                    "bl": 0.1,
+                    "br": 0.1
+                }
+            }]
+        },
+        "pad_c": {
+            "shapes": [{
+                "layers": ["top"],
+                "type": "rect",
+                "width": 5.15,
+                "height": 5.15,
+                "radii": {
+                    "tl": 0.25,
+                    "tr": 0.25,
+                    "bl": 0.25,
+                    "br": 0.25
+                }
+            }]
+        }
+    }
+}

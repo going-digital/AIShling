@@ -1,0 +1,330 @@
+{
+    "components": {
+        "IC1": {
+            "footprint": "ezr32hg330f64r67",
+            "layer": "top",
+            "location": [-2, 0],
+            "show": true,
+            "silkscreen": {
+                "refdef": {
+                    "show": false
+                }
+            },
+            "rotate": 135
+        },
+        "IC2": {
+            "footprint": "osc_3225",
+            "layer": "top",
+            "location": [-6, 6],
+            "show": true,
+            "silkscreen": {
+                "refdef": {
+                    "show": false
+                }
+            }
+        },
+        "SK1": {
+            "footprint": "usb_a_smd",
+            "location": [-14.5, 0],
+            "rotate": 90,
+            "show": true,
+            "silkscreen": {
+                "refdef": {
+                    "show": false
+                }
+            }
+        },
+        "SK2": {
+            "footprint": "sma_f",
+            "layer": "top",
+            "location": [14, 0],
+            "rotate": 90,
+            "show": true,
+            "silkscreen": {
+                "refdef": {
+                    "show": false
+                }
+            }
+        },
+        "R1": {
+            "footprint": "0603",
+            "layer": "top",
+            "location": [-6, -6],
+            "show": true,
+            "silkscreen": {
+                "refdef": {
+                    "show": false
+                }
+            },
+            "rotate": 90
+        },
+        "D1": {
+            "footprint": "0603",
+            "layer": "top",
+            "location": [-4, -7],
+            "show": true,
+            "silkscreen": {
+                "refdef": {
+                    "show": false
+                }
+            }
+        },
+        "R2": {
+            "footprint": "0603",
+            "layer": "top",
+            "location": [2, -6],
+            "show": true,
+            "silkscreen": {
+                "refdef": {
+                    "show": false
+                }
+            },
+            "rotate": 90
+        },
+        "D2": {
+            "footprint": "0603",
+            "layer": "top",
+            "location": [0, -7],
+            "show": true,
+            "silkscreen": {
+                "refdef": {
+                    "show": false
+                }
+            }
+        },
+        "R3": {
+            "footprint": "0603",
+            "layer": "top",
+            "location": [6, -6],
+            "show": true,
+            "silkscreen": {
+                "refdef": {
+                    "show": false
+                }
+            },
+            "rotate": 90
+        },
+        "D3": {
+            "footprint": "0603",
+            "layer": "top",
+            "location": [4, -7],
+            "show": true,
+            "silkscreen": {
+                "refdef": {
+                    "show": false
+                }
+            }
+        },
+        "SK3": {
+            "footprint": "tc2030_idc_nl_avrisp",
+            "layer": "top",
+            "location": [4, 5.5],
+            "show": true,
+            "silkscreen": {
+                "refdef": {
+                    "show": false
+                }
+            }
+        },
+        "LR1": {
+          "footprint": "0603",
+          "layer": "top",
+          "location": [5.5,-1],
+          "show": true,
+          "silkscreen": {
+            "refdef": {
+              "show": false
+            }
+          },
+          "rotate": 90
+        },
+        "CR1": {
+          "footprint": "0603",
+          "layer": "top",
+          "location": [6,-3.5],
+          "show": true,
+          "silkscreen": {
+            "refdef": {
+              "show": false
+            }
+          }
+        },
+        "LR2": {
+          "footprint": "0603",
+          "layer": "top",
+          "location": [7.5,0],
+          "show": true,
+          "silkscreen": {
+            "refdef": {
+              "show": false
+            }
+          }
+        },
+        "CR2": {
+          "footprint": "0603",
+          "layer": "top",
+          "location": [7.5,-2],
+          "show": true,
+          "silkscreen": {
+            "refdef": {
+              "show": false
+            }
+          }
+        },
+        "MH1": {
+            "footprint": "hole-2mm",
+            "location": [-9, -5.5]
+        },
+        "MH2": {
+            "footprint": "hole-2mm",
+            "location": [9, 5.5]
+        },
+        "ICx": {
+            "footprint": "attiny85_20m1",
+            "location": [0,20]
+        },
+        "CONx": {
+            "footprint": "usb_a_skeleton",
+            "location": [0,20],
+            "layer": "bottom"
+        }
+    },
+    "config": {
+        "name": "cordwood-too",
+        "no-docs": false,
+        "no-drill-index": false,
+        "no-flashes": false,
+        "no-layer-index": false,
+        "rev": "A",
+        "style-layout": "default",
+        "units": "mm"
+    },
+    "distances": {
+        "from-pour-to": {
+            "drill": 0.4,
+            "outline": 0.25,
+            "pad": 0.3,
+            "route": 0.25
+        },
+        "soldermask": {
+            "circle-buffer": 0.05,
+            "path-scale": 1.05,
+            "rect-buffer": 0.05
+        },
+        "solderpaste": {
+            "circle-buffer": -0.1,
+            "path-scale": 0.9,
+            "rect-buffer": -0.1
+        }
+    },
+    "documentation": {
+        "board-details": {
+            "font-family": "Overlock-Regular-OTF-webfont",
+            "font-size": "1.5mm",
+            "letter-spacing": "0mm",
+            "line-height": "1.5mm",
+            "location": [-49.595894, -61.434224],
+            "rotate": 0,
+            "style": "fill",
+            "type": "text",
+            "value": "Board details:\nName: AIShling\nRevision: A\nDescription: AIS receiver\nLicense: MIT\nDesigner: Peter Knight"
+        },
+        "manufacturing": {
+            "font-family": "Overlock-Regular-OTF-webfont",
+            "font-size": "1.5mm",
+            "letter-spacing": "0mm",
+            "line-height": "1.5mm",
+            "location": [-46.431832, -74.666223],
+            "rotate": 0,
+            "style": "fill",
+            "type": "text",
+            "value": "Manufacturing:\nRoHS and lead free compliant manufacturing process\nUnit of length: Millimetre (mm)\nNumber of layers: 2 ('top', 'bottom')\nBoard thickness: 1.6 mm\nMaterial: FR4 35/35 um copper\nSilkscreen: top (white), bottom (white)\nSoldermask: top (green), bottom (green)\nSurface finish: RoHS lead free"
+        },
+        "pcbmode": {
+            "font-family": "Overlock-Regular-OTF-webfont",
+            "font-size": "1.2mm",
+            "letter-spacing": "0mm",
+            "line-height": "1.2mm",
+            "location": [-50.241817, -85.439666],
+            "rotate": 0,
+            "style": "fill",
+            "type": "text",
+            "value": "Designed with PCBmodE, an open source software\n     http://pcbmode.com\nStay updated:\n     @boldport @pcbmode http://boldport.com"
+        }
+    },
+    "drill-index": {
+        "location": [-62.363106, -50.112271]
+    },
+    "drills": {},
+    "files": {
+        "routing-data": "cordwood-too_routing.json",
+        "routing-svg": "cordwood-too.svg"
+    },
+    "gerber": {
+        "decimals": 6,
+        "digits": 6,
+        "min-segment-length": 0.05,
+        "steps-per-segment": 100
+    },
+    "outline": {
+        "measurements": {
+            "font-family": "UbuntuMono-R-webfont",
+            "scale": 0.0008
+        },
+        "shape": {
+            "type": "path",
+            "value": "M29,3.5L29,12L25.55,12L25.55,15.5L3.45,15.5L3.45,14.3L0,14.3L0,1.2L3.45,1.2L3.45,0L25.55,0L25.55,3.5L29,3.5"
+
+        }
+    },
+    "shapes": {
+        "INFO": {
+            "footprint": "text",
+            "layer": "top",
+            "location": [
+                27.558049, -13.480169
+            ],
+            "rotate": 90,
+            "show": true
+        },
+        "PR": {
+            "footprint": "pours",
+            "layer": "top",
+            "location": [
+                0,
+                0
+            ],
+            "show": false
+        },
+        "SM": {
+            "footprint": "soldermask",
+            "layer": "top",
+            "location": [-2.57, -0.47],
+            "show": false
+        },
+        "SS": {
+            "footprint": "silkscreen",
+            "layer": "top",
+            "location": [
+                0,
+                0
+            ],
+            "show": false
+        }
+    },
+    "soldermask": {
+        "circle-buffer": 0.05,
+        "path-scale": 1.05,
+        "rect-buffer": 0.05,
+        "scale": 1.1
+    },
+    "solderpaste": {
+        "circle-buffer": -0.1,
+        "path-scale": 0.9,
+        "rect-buffer": -0.1,
+        "scale": 0.9
+    },
+    "vias": {
+        "default-via": "VIA"
+    }
+}

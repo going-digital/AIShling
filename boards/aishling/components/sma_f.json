@@ -1,0 +1,124 @@
+{
+    "info": {
+        "description": "SMA straight jack inline",
+        "manufacturer": "Multicomp",
+        "part-number": "19-70-1-TGG",
+        "suppliers": {
+            "farnell": "1342652"
+        },
+        "notes": ""
+    },
+
+
+
+        "pins": {
+        "1": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [-2.775, 0],
+                "label": "SCREEN"
+            }
+        },
+        "2": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [2.775, 0],
+                "label": "SCREEN"
+            }
+        },
+        "3": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [0, 0],
+                "label": "SIGNAL"
+            }
+        }
+    },
+    "layout": {
+        "silkscreen": {
+            "shapes": [{
+                "type": "rect",
+                "location": [0, -2.375],
+                "style": "stroke",
+                "stroke-width": 0.1,
+                "width": 12,
+                "height": 5.38
+            }]
+        },
+        "assembly": {
+            "shapes": [{
+                    "type": "rect",
+                    "style": "stroke",
+                    "stroke-width": 0.1,
+                    "width": 0.76,
+                    "height": 5.38,
+                    "location": [0, -2.375]
+                },
+                {
+                    "type": "rect",
+                    "style": "stroke",
+                    "stroke-width": 0.1,
+                    "width": 1.27,
+                    "height": 5.38,
+                    "location": [-2.775, -2.375]
+                },
+                {
+                    "type": "rect",
+                    "style": "stroke",
+                    "stroke-width": 0.1,
+                    "width": 1.27,
+                    "height": 5.38,
+                    "location": [2.775, -2.375]
+                },
+                {
+                    "type": "rect",
+                    "style": "stroke",
+                    "stroke-width": 0.1,
+                    "width": 6.35,
+                    "height": 1.27,
+                    "location": [0, 0.635]
+                },
+                {
+                    "type": "rect",
+                    "style": "stroke",
+                    "stroke-width": 0.1,
+                    "width": 5,
+                    "height": 7.62,
+                    "location": [0, 5.08]
+                }
+            ]
+        }
+    },
+    "pads": {
+        "pad_a": {
+            "shapes": [{
+                "type": "rect",
+                "layers": ["top", "bottom"],
+                "width": 2.667,
+                "height": 4.191,
+                "radii": {
+                    "tl": 0.25,
+                    "tr": 0,
+                    "bl": 0.25,
+                    "br": 0
+                },
+                "location": [0, -2.0955]
+            }]
+        },
+        "pad_b": {
+            "shapes": [{
+                "type": "rect",
+                "layers": ["top"],
+                "width": 1.778,
+                "height": 4.191,
+                "radii": {
+                    "tl": 0.25,
+                    "tr": 0,
+                    "bl": 0.25,
+                    "br": 0
+                },
+                "location": [0, -2.0955]
+            }]
+        }
+    }
+}

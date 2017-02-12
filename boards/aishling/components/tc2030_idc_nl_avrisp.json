@@ -1,0 +1,108 @@
+{
+    "info": {
+        "description": "TagConnect AVRISP",
+        "manufacturer": "TagConnect",
+        "part-number": "No fit",
+        "suppliers": {
+            "farnell": ""
+        },
+        "notes": "From http://www.tag-connect.com/Materials/TC2030-IDC-NL.pdf"
+    },
+    "pins": {
+        "1": {
+            "layout": {
+                "pad": "pad",
+                "location": [-1.27, -0.635],
+                "label": "MISO"
+            }
+        },
+        "2": {
+            "layout": {
+                "pad": "pad",
+                "location": [-1.27, 0.635],
+                "label": "VCC"
+            }
+        },
+        "3": {
+            "layout": {
+                "pad": "pad",
+                "location": [0, -0.635],
+                "label": "SCK"
+            }
+        },
+        "4": {
+            "layout": {
+                "pad": "pad",
+                "location": [0, 0.635],
+                "label": "MOSI"
+            }
+        },
+        "5": {
+            "layout": {
+                "pad": "pad",
+                "location": [1.27, -0.635],
+                "label": "RESET"
+            }
+        },
+        "6": {
+            "layout": {
+                "pad": "pad",
+                "location": [1.27, 0.635],
+                "label": "GND"
+            }
+        },
+        "d1": {
+            "layout": {
+                "pad": "drill",
+                "location": [-2.54, 0]
+            }
+        },
+        "d2": {
+            "layout": {
+                "pad": "drill",
+                "location": [2.54, 1.016]
+            }
+        },
+        "d3": {
+            "layout": {
+                "pad": "drill",
+                "location": [2.54, -1.016]
+            }
+        }
+    },
+    "layout": {
+        "silkscreen": {
+            "shapes": [{
+                "type": "rect",
+                "width": 6,
+                "height": 3,
+                "style": "stroke",
+                "stroke-width": 0.2,
+                "location": [0, 0],
+                "radii": {
+                    "bl": 0.25,
+                    "br": 0.25,
+                    "tl": 0,
+                    "tr": 0.25
+                }
+            }]
+        }
+    },
+    "pads": {
+        "pad": {
+            "shapes": [{
+                "type": "circle",
+                "diameter": 0.767,
+                "style": "fill",
+                "location": [0, 0],
+                "solderpaste": []
+            }]
+        },
+        "drill": {
+            "drills": [{
+                "diameter": 0.991,
+                "location": [0, 0]
+            }]
+        }
+    }
+}

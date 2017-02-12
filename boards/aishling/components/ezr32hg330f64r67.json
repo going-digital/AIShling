@@ -1,0 +1,436 @@
+{
+    "info": {
+        "description": "Microcontroller",
+        "manufacturer": "Silicon Labs",
+        "part-number": "EZR32HG330F64R67G-B0",
+        "suppliers": {
+            "farnell": ""
+        },
+        "notes": "QFN48 package"
+    },
+    "pins": {
+        "1": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [-3.4, 2.75],
+                "label": "SWCLK/PF0"
+            }
+        },
+        "2": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [-3.4, 2.25],
+                "label": "SWDIO/PF1"
+            }
+        },
+        "3": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [-3.4, 1.75],
+                "label": "PF2"
+            }
+        },
+        "4": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [-3.4, 1.25],
+                "label": "PF3"
+            }
+        },
+        "5": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [-3.4, 0.75],
+                "label": "PF4"
+            }
+        },
+        "6": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [-3.4, 0.25],
+                "label": "IOVDD_5"
+            }
+        },
+        "7": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [-3.4, -0.25],
+                "label": "PE10"
+            }
+        },
+        "8": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [-3.4, -0.75],
+                "label": "PE11"
+            }
+        },
+        "9": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [-3.4, -1.25],
+                "label": "PE12"
+            }
+        },
+        "10": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [-3.4, -1.75],
+                "label": "PE13"
+            }
+        },
+        "11": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [-3.4, -2.25],
+                "label": "PA0"
+            }
+        },
+        "12": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [-3.4, -2.75],
+                "label": "PA1"
+            }
+        },
+
+        "13": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [-2.75, -3.4],
+                "label": "XOUT"
+            }
+        },
+        "14": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [-2.25, -3.4],
+                "label": "XIN"
+            }
+        },
+        "15": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [-1.75, -3.4],
+                "label": "GPIO2"
+            }
+        },
+        "16": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [-1.25, -3.4],
+                "label": "GPIO3"
+            }
+        },
+        "17": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [-0.75, -3.4],
+                "label": "DNC"
+            }
+        },
+        "18": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [-0.25, -3.4],
+                "label": "RXP"
+            }
+        },
+        "19": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [0.25, -3.4],
+                "label": "RXN"
+            }
+        },
+        "20": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [0.75, -3.4],
+                "label": "TX_13/16/20"
+            }
+        },
+        "21": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [1.25, -3.4],
+                "label": "GND/DualTX_20"
+            }
+        },
+        "22": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [1.75, -3.4],
+                "label": "RFVDD_2"
+            }
+        },
+        "23": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [2.25, -3.4],
+                "label": "TXRAMP"
+            }
+        },
+        "24": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [2.75, -3.4],
+                "label": "RFVDD_1"
+            }
+        },
+
+        "25": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [3.4, -2.75],
+                "label": "GPIO0"
+            }
+        },
+        "26": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [3.4, -2.25],
+                "label": "GPIO1"
+            }
+        },
+        "27": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [3.4, -1.75],
+                "label": "PB7"
+            }
+        },
+        "28": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [3.4, -1.25],
+                "label": "PB8"
+            }
+        },
+        "29": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [3.4, -0.75],
+                "label": "RESETn"
+            }
+        },
+        "30": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [3.4, -0.25],
+                "label": "PB11"
+            }
+        },
+        "31": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [3.4, 0.25],
+                "label": "AVDD_1"
+            }
+        },
+        "32": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [3.4, 0.75],
+                "label": "PB13"
+            }
+        },
+        "33": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [3.4, 1.25],
+                "label": "PB14"
+            }
+        },
+        "34": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [3.4, 1.75],
+                "label": "IOVDD_3"
+            }
+        },
+        "35": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [3.4, 2.25],
+                "label": "AVDD_0"
+            }
+        },
+        "36": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [3.4, 2.75],
+                "label": "PD4"
+            }
+        },
+
+        "37": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [2.75, 3.4],
+                "label": "PD5"
+            }
+        },
+        "38": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [2.25, 3.4],
+                "label": "PD6"
+            }
+        },
+        "39": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [1.75, 3.4],
+                "label": "PD7"
+            }
+        },
+        "40": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [1.25, 3.4],
+                "label": "VDD_DREG"
+            }
+        },
+        "41": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [0.75, 3.4],
+                "label": "DECOUPLE"
+            }
+        },
+        "42": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [0.25, 3.4],
+                "label": "PC8"
+            }
+        },
+        "43": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [-0.25, 3.4],
+                "label": "PC9"
+            }
+        },
+        "44": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [-0.75, 3.4],
+                "label": "PC10"
+            }
+        },
+        "45": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [-1.25, 3.4],
+                "label": "USB_VREGI"
+            }
+        },
+        "46": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [-1.75, 3.4],
+                "label": "USB_VREGO"
+            }
+        },
+        "47": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [-2.25, 3.4],
+                "label": "USB_DM/PC14"
+            }
+        },
+        "48": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [-2.75, 3.4],
+                "label": "USB_DP/PC15"
+            }
+        },
+
+        "TH": {
+            "layout": {
+                "pad": "pad_c",
+                "location": [0, 0],
+                "label": "VSS"
+            }
+        }
+    },
+    "layout": {
+        "silkscreen": {
+            "shapes": [{
+                    "type": "rect",
+                    "width": 8,
+                    "height": 8,
+                    "location": [0, 0]
+                },
+                {
+                    "type": "circle",
+                    "diameter": 0.6,
+                    "style": "fill",
+                    "location": [-3.5, 3.5]
+                }
+            ]
+        },
+        "assembly": {
+            "shapes": [{
+                    "type": "rect",
+                    "width": 7,
+                    "height": 7,
+                    "location": [0, 0]
+                },
+                {
+                    "type": "circle",
+                    "diameter": 0.4,
+                    "style": "fill",
+                    "location": [-3, 3]
+                }
+            ]
+        }
+    },
+    "pads": {
+        "pad_a": {
+            "shapes": [{
+                "layers": ["top"],
+                "type": "rect",
+                "width": 0.79,
+                "height": 0.27,
+                "radii": {
+                    "tl": 0.1,
+                    "tr": 0.1,
+                    "bl": 0.1,
+                    "br": 0.1
+                }
+            }]
+        },
+        "pad_b": {
+            "shapes": [{
+                "layers": ["top"],
+                "type": "rect",
+                "width": 0.27,
+                "height": 0.79,
+                "radii": {
+                    "tl": 0.1,
+                    "tr": 0.1,
+                    "bl": 0.1,
+                    "br": 0.1
+                }
+            }]
+        },
+        "pad_c": {
+            "shapes": [{
+                "layers": ["top"],
+                "type": "rect",
+                "width": 5.2,
+                "height": 5.2,
+                "radii": {
+                    "tl": 0.25,
+                    "tr": 0.25,
+                    "bl": 0.25,
+                    "br": 0.25
+                }
+            }]
+        }
+    }
+}

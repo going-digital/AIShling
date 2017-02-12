@@ -1,0 +1,379 @@
+{
+    "info": {
+        "description": "Microcontroller",
+        "manufacturer": "Atmel",
+        "part-number": "ATmega32U4-AUR",
+        "suppliers": {
+            "farnell": "2443182"
+        },
+        "notes": "TQFP44 package"
+    },
+    "pins": {
+        "1": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [-5.6, 4.0],
+                "label": "PE6"
+            }
+        },
+        "2": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [-5.6, 3.2],
+                "label": "UVcc"
+            }
+        },
+        "3": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [-5.6, 2.4],
+                "label": "D-"
+            }
+        },
+        "4": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [-5.6, 1.6],
+                "label": "D+"
+            }
+        },
+        "5": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [-5.6, 0.8],
+                "label": "UGnd"
+            }
+        },
+        "6": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [-5.6, 0],
+                "label": "UCap"
+            }
+        },
+        "7": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [-5.6, -0.8],
+                "label": "VBus"
+            }
+        },
+        "8": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [-5.6, -1.6],
+                "label": "PB0"
+            }
+        },
+        "9": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [-5.6, -2.4],
+                "label": "PB1_SCK"
+            }
+        },
+        "10": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [-5.6, -3.2],
+                "label": "PB2_PDI"
+            }
+        },
+        "11": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [-5.6, -4.0],
+                "label": "PB3_PDO"
+            }
+        },
+        "12": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [-4.0, -5.6],
+                "label": "PB7"
+            }
+        },
+        "13": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [-3.2, -5.6],
+                "label": "nRESET"
+            }
+        },
+        "14": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [-2.4, -5.6],
+                "label": "VCC"
+            }
+        },
+        "15": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [-1.6, -5.6],
+                "label": "GND"
+            }
+        },
+        "16": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [-0.8, -5.6],
+                "label": "XTAL2"
+            }
+        },
+        "17": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [0, -5.6],
+                "label": "XTAL1"
+            }
+        },
+        "18": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [0.8, -5.6],
+                "label": "PD0"
+            }
+        },
+        "19": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [1.6, -5.6],
+                "label": "PD1"
+            }
+        },
+        "20": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [2.4, -5.6],
+                "label": "PD2"
+            }
+        },
+        "21": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [3.2, -5.6],
+                "label": "PD3"
+            }
+        },
+        "22": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [4.0, -5.6],
+                "label": "PD5"
+            }
+        },
+        "23": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [5.6, -4.0],
+                "label": "GND"
+            }
+        },
+        "24": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [5.6, -3.2],
+                "label": "AVcc"
+            }
+        },
+        "25": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [5.6, -2.4],
+                "label": "PD4"
+            }
+        },
+        "26": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [5.6, -1.6],
+                "label": "PD6"
+            }
+        },
+        "27": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [5.6, -0.8],
+                "label": "PD7"
+            }
+        },
+        "28": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [5.6, 0],
+                "label": "PB4"
+            }
+        },
+        "29": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [5.6, 0.8],
+                "label": "PB5"
+            }
+        },
+        "30": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [5.6, 1.6],
+                "label": "PB6"
+            }
+        },
+        "31": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [5.6, 2.4],
+                "label": "PC6"
+            }
+        },
+        "32": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [5.6, 3.2],
+                "label": "PC7"
+            }
+        },
+        "33": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [5.6, 4.0],
+                "label": "PE2"
+            }
+        },
+        "34": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [4.0, 5.6],
+                "label": "VCC"
+            }
+        },
+        "35": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [3.2, 5.6],
+                "label": "GND"
+            }
+        },
+        "36": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [2.4, 5.6],
+                "label": "PF7"
+            }
+        },
+        "37": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [1.6, 5.6],
+                "label": "PF6"
+            }
+        },
+        "38": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [0.8, 5.6],
+                "label": "PF5"
+            }
+        },
+        "39": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [0, 5.6],
+                "label": "PF4"
+            }
+        },
+        "40": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [-0.8, 5.6],
+                "label": "PF1"
+            }
+        },
+        "41": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [-1.6, 5.6],
+                "label": "PF0"
+            }
+        },
+        "42": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [-2.4, 5.6],
+                "label": "AREF"
+            }
+        },
+        "43": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [-3.2, 5.6],
+                "label": "GND"
+            }
+        },
+        "44": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [-4.0, 5.6],
+                "label": "AVCC"
+            }
+        }
+    },
+    "layout": {
+        "silkscreen": {
+            "shapes": [{
+                "type": "rect",
+                "width": 13,
+                "height": 13,
+                "location": [0, 0]
+            }, {
+                "type": "circle",
+                "diameter": 0.4,
+                "style": "fill",
+                "location": [-4, 4]
+            }]
+        },
+        "assembly": {
+            "shapes": [{
+                "type": "rect",
+                "width": 10,
+                "height": 10,
+                "location": [0, 0]
+            }, {
+                "type": "circle",
+                "diameter": 0.4,
+                "style": "fill",
+                "location": [-4.5, 4.5]
+            }]
+        }
+    },
+    "pads": {
+        "pad_a": {
+            "shapes": [{
+                "layers": ["top"],
+                "type": "rect",
+                "width": 1.5,
+                "height": 0.55,
+                "radii": {
+                    "tl": 0.25,
+                    "tr": 0.25,
+                    "bl": 0.25,
+                    "br": 0.25
+                }
+            }]
+        },
+        "pad_b": {
+            "shapes": [{
+                "layers": ["top"],
+                "type": "rect",
+                "width": 0.55,
+                "height": 1.5,
+                "radii": {
+                    "tl": 0.25,
+                    "tr": 0.25,
+                    "bl": 0.25,
+                    "br": 0.25
+                }
+            }]
+        }
+    }
+}

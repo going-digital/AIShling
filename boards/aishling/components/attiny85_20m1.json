@@ -1,0 +1,236 @@
+{
+    "info": {
+        "description": "Microcontroller",
+        "manufacturer": "Atmel",
+        "part-number": "ATtiny85-M",
+        "suppliers": {
+            "farnell": ""
+        },
+        "notes": "20M1 package"
+    },
+    "pins": {
+        "1": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [-2, 1],
+                "label": "PB5"
+            }
+        },
+        "2": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [-2, 0.5],
+                "label": "PB3"
+            }
+        },
+        "3": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [-2, 0],
+                "label": "DNC"
+            }
+        },
+        "4": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [-2, -0.5],
+                "label": "DNC"
+            }
+        },
+        "5": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [-2, -1],
+                "label": "PB4"
+            }
+        },
+        "6": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [-1, -2],
+                "label": "DNC"
+            }
+        },
+        "7": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [-0.5, -2],
+                "label": "DNC"
+            }
+        },
+        "8": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [0, -2],
+                "label": "GND"
+            }
+        },
+        "9": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [0.5, -2],
+                "label": "DNC"
+            }
+        },
+        "10": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [1, -2],
+                "label": "DNC"
+            }
+        },
+        "11": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [2, -1],
+                "label": "PB0"
+            }
+        },
+        "12": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [2, -0.5],
+                "label": "PB1"
+            }
+        },
+        "13": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [2, 0],
+                "label": "DNC"
+            }
+        },
+        "14": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [2, 0.5],
+                "label": "PB2"
+            }
+        },
+        "15": {
+            "layout": {
+                "pad": "pad_a",
+                "location": [2, 1],
+                "label": "VCC"
+            }
+        },
+        "16": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [1, 2],
+                "label": "DNC"
+            }
+        },
+        "17": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [0.5, 2],
+                "label": "DNC"
+            }
+        },
+        "18": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [0, 2],
+                "label": "DNC"
+            }
+        },
+        "19": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [-0.5, 2],
+                "label": "DNC"
+            }
+        },
+        "20": {
+            "layout": {
+                "pad": "pad_b",
+                "location": [-1, 2],
+                "label": "DNC"
+            }
+        },
+        "TH": {
+            "layout": {
+                "pad": "pad_c",
+                "location": [0, 0],
+                "label": "GND"
+            }
+        }
+    },
+    "layout": {
+        "silkscreen": {
+            "shapes": [{
+                    "type": "rect",
+                    "width": 5,
+                    "height": 5,
+                    "location": [0, 0]
+                },
+                {
+                    "type": "circle",
+                    "diameter": 0.6,
+                    "style": "fill",
+                    "location": [-2, 2]
+                }
+            ]
+        },
+        "assembly": {
+            "shapes": [{
+                    "type": "rect",
+                    "width": 4,
+                    "height": 4,
+                    "location": [0, 0]
+                },
+                {
+                    "type": "circle",
+                    "diameter": 0.4,
+                    "style": "fill",
+                    "location": [-1.5, 1.5]
+                }
+            ]
+        }
+    },
+    "pads": {
+        "pad_a": {
+            "shapes": [{
+                "layers": ["top"],
+                "type": "rect",
+                "width": 0.8,
+                "height": 0.23,
+                "radii": {
+                    "tl": 0.1,
+                    "tr": 0.1,
+                    "bl": 0.1,
+                    "br": 0.1
+                }
+            }]
+        },
+        "pad_b": {
+            "shapes": [{
+                "layers": ["top"],
+                "type": "rect",
+                "width": 0.23,
+                "height": 0.8,
+                "radii": {
+                    "tl": 0.1,
+                    "tr": 0.1,
+                    "bl": 0.1,
+                    "br": 0.1
+                }
+            }]
+        },
+        "pad_c": {
+            "shapes": [{
+                "layers": ["top"],
+                "type": "rect",
+                "width": 2.6,
+                "height": 2.6,
+                "radii": {
+                    "tl": 0.25,
+                    "tr": 0.25,
+                    "bl": 0.25,
+                    "br": 0.25
+                }
+            }]
+        }
+    }
+}
