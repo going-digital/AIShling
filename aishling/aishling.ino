@@ -16,16 +16,16 @@ void setup() {
   // Give USB terminal time to start up
   startup_message();
   // Set up radio
-  Serial.print("Setting up radio...");
-  unsigned long t;
-  t = millis();
+  //Serial.print("Setting up radio...");
+  //unsigned long t;
+  //t = millis();
   radio_setup();
-  t = millis() - t;
-  Serial.print("done in ");
-  Serial.print(t);
-  Serial.println("ms");
+  //t = millis() - t;
+  //Serial.print("done in ");
+  //Serial.print(t);
+  //Serial.println("ms");
 
-  radio_test();
+  //radio_test();
   
   // Connect AIS decoder
   TXLED1; // Green
@@ -38,14 +38,14 @@ void setup() {
 
 void startup_message() {
   // Startup message
-  Serial.println("AIShling: AIS receiver");
-  Serial.println("http://github.com/going-digital/AIShling");
-  Serial.println();
-  Serial.println("h: help");
-  Serial.println("e: AIS state");
-  Serial.println("f: Radio crystal finetune");
-  Serial.println("q: Enable oscillator output");
-  Serial.println("w: Disable oscillator output");
+  Serial.println("$PAIS, AIShling: AIS receiver                   *60");
+  Serial.println("$PAIS, http://github.com/going-digital/AIShling *4F");
+  //Serial.println();
+  //Serial.println("h: help");
+  //Serial.println("e: AIS state");
+  //Serial.println("f: Radio crystal finetune");
+  //Serial.println("q: Enable oscillator output");
+  //Serial.println("w: Disable oscillator output");
 }
 
 ////////////////////////////////////////////////////////////////////////////// 
