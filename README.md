@@ -77,3 +77,6 @@ TODO: Add DSC support
 Cheap Sparkfun Pro Micro clones are not programmed correctly. Use Arduino ISP
 or other ISP programming method to reprogram the bootloader from the Arduino
 IDE.
+
+## Digital Selective Call mode
+DSC uses 2FSK reception mode as a zero crossing detector, then uses crossover timing to implement a WB4WGA style receiver (QEX, March/April 2005).

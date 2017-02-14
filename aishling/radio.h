@@ -1,5 +1,5 @@
-const int radio_data = 3;
-const int radio_clock = 2;
+const int radio_data = 2;
+const int radio_gpio1 = 3;
 
 void radio_setup();
 int radio_rssi();

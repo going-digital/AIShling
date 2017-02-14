@@ -6,10 +6,10 @@
 const int si4463_sdn   = 9;  // Shutdown
 const int si4463_nsel  = 10;  // SPI
 const int si4463_mosi  = 16;  // SPI
-const int si4463_gpio0 = radio_clock;  // RX clock
+const int si4463_gpio0 = radio_data;  // RX data
 const int si4463_sck   = 15; // SPI
 const int si4463_miso  = 14; // SPI
-const int si4463_gpio1 = radio_data; // RX data, data guaranteed valid when clock rises.
+//const int si4463_gpio1 = radio_data; // RX data, data guaranteed valid when clock rises.
 
 #define T_POR (6) // ms
 #define T_SPI (1) // us Simplification of SPI timing scheme in data sheet table 8
@@ -175,8 +175,8 @@ const uint8_t si4463_setup_data[] PROGMEM = {
 
   // Configure GPIO to RX_DATA_CLK, RX_DATA, RX_STATE, TX_STATE
   0x08, CMD_GPIO_PIN_CFG,
-    0x11, // GPIO0 - 2 low 3 high 11 RX_DATA_CLK
-    0x14, // GPIO1 - 14 RX_DATA
+    0x15, // GPIO0 - RX_RAW_DATA
+    0x00, // GPIO1 - DONOTHING
     0x61, // GPIO2 - RX_STATE mfr uses 0x61
     0x60, // GPIO3 - TX_STATE mfr uses 0x60
     0x00, // NIRQ - DONOTHING
